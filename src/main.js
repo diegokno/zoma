@@ -66,7 +66,7 @@ const PROGRESS_KEY = "soma:progress";
 const LANGUAGE_KEY = "soma:language";
 const translations = {
   es: {
-    pageTitle: "Zoma — Retos de cubo Soma",
+    pageTitle: "Zoma",
     pageDescription: "Retos tridimensionales exactos para el cubo Soma.",
     openLibrary: "Abrir biblioteca",
     library: "Biblioteca",
@@ -143,7 +143,7 @@ const translations = {
     yesterday: "Ayer",
   },
   en: {
-    pageTitle: "Zoma — Soma cube challenges",
+    pageTitle: "Zoma",
     pageDescription: "Precise three-dimensional challenges for the Soma cube.",
     openLibrary: "Open library",
     library: "Library",
