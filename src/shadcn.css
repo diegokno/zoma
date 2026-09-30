@@ -1,0 +1,458 @@
+.shadcn-theme {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: oklch(0.955 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.89 0 0);
+  --input: oklch(0.89 0 0);
+  --ring: oklch(0.708 0 0);
+  --viewer: oklch(0.965 0.002 247);
+  --success: oklch(0.53 0.15 150);
+  --success-foreground: oklch(0.985 0 0);
+  --bg: var(--background);
+  --surface: var(--viewer);
+  --surface-strong: var(--accent);
+  --surface-active: oklch(0.93 0 0);
+  --ink: var(--foreground);
+  --line: var(--border);
+  --white: var(--primary-foreground);
+  --primary-dark: var(--foreground);
+  --focus: var(--ring);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html,
+body.shadcn-theme,
+.shadcn-theme #app {
+  min-width: 0;
+}
+
+.shadcn-theme button:focus-visible,
+.shadcn-theme select:focus-visible,
+.shadcn-theme input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.shadcn-theme .topbar {
+  height: 60px;
+  padding-inline: 20px;
+  border-color: var(--border);
+  background: color-mix(in oklch, var(--background) 94%, transparent);
+}
+
+.shadcn-theme .brand {
+  width: 36px;
+  height: 36px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+
+.shadcn-theme .brand:hover {
+  border-color: var(--border);
+  background: var(--accent);
+}
+
+.shadcn-theme .brand-mark {
+  width: 22px;
+  height: 22px;
+}
+
+.shadcn-theme .brand-mark i {
+  width: 9px;
+  height: 9px;
+  border-width: 1.25px;
+  border-radius: 1.5px;
+}
+
+.shadcn-theme .brand-mark i:nth-child(2),
+.shadcn-theme .brand-mark i:nth-child(4) { left: 11px; }
+.shadcn-theme .brand-mark i:nth-child(3),
+.shadcn-theme .brand-mark i:nth-child(4) { top: 11px; }
+
+.shadcn-theme .wake-button {
+  min-height: 36px;
+  padding: 0 12px 0 6px;
+  gap: 8px;
+  border-color: var(--border);
+  border-radius: 7px;
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  box-shadow: 0 1px 2px oklch(0.145 0 0 / 0.05);
+}
+
+.shadcn-theme .wake-button:hover {
+  border-color: var(--border);
+  background: var(--accent);
+}
+
+.shadcn-theme .wake-visual {
+  width: 26px;
+  height: 26px;
+  flex-basis: 26px;
+  border-radius: 5px;
+  background: var(--secondary);
+}
+
+.shadcn-theme .wake-button.is-active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.shadcn-theme .wake-button.is-active .wake-visual {
+  color: oklch(0.9 0.17 95);
+  background: oklch(0.27 0 0);
+  box-shadow: 0 0 8px oklch(0.84 0.17 95 / 0.45);
+}
+
+.shadcn-theme .wake-status-dot { border-color: var(--background); }
+.shadcn-theme .wake-button.is-active .wake-status-dot { border-color: var(--primary); }
+
+.shadcn-theme .workspace {
+  min-height: calc(100dvh - 60px);
+  grid-template-columns: minmax(0, 1fr) 400px;
+  background: var(--background);
+}
+
+.shadcn-theme .viewer {
+  min-height: calc(100dvh - 60px);
+  background: var(--viewer);
+}
+
+.shadcn-theme .control-panel {
+  min-height: calc(100dvh - 60px);
+  padding: 28px 24px 22px;
+  border-color: var(--border);
+  background: var(--card);
+}
+
+.shadcn-theme .floating-button,
+.shadcn-theme .nav-button,
+.shadcn-theme .timer-button {
+  border-color: var(--border);
+  border-radius: 7px;
+  background: var(--background);
+  color: var(--foreground);
+  box-shadow: 0 1px 2px oklch(0.145 0 0 / 0.06);
+}
+
+.shadcn-theme .floating-button:hover,
+.shadcn-theme .nav-button:hover,
+.shadcn-theme .timer-button:hover {
+  border-color: var(--border);
+  background: var(--accent);
+}
+
+.shadcn-theme .challenge-heading { min-height: 142px; }
+
+.shadcn-theme .challenge-count {
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.shadcn-theme .difficulty-control {
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+.shadcn-theme .difficulty-control select,
+.shadcn-theme .language-control select {
+  border-color: var(--input);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--foreground);
+  font-weight: 500;
+  box-shadow: 0 1px 2px oklch(0.145 0 0 / 0.04);
+}
+
+.shadcn-theme h1 {
+  margin-top: 18px;
+  color: var(--foreground);
+  font-size: 1.75rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.shadcn-theme .challenge-meta {
+  margin-top: 9px;
+  color: var(--muted-foreground);
+  font-size: 0.8125rem;
+}
+
+.shadcn-theme .timer-bar {
+  min-height: 64px;
+  margin-bottom: 18px;
+  padding: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.shadcn-theme .timer-display {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.shadcn-theme .timer-record {
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+.shadcn-theme .timer-button {
+  width: 36px;
+  height: 36px;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.shadcn-theme .timer-primary { color: var(--foreground); }
+
+.shadcn-theme .complete-button {
+  width: auto;
+  min-width: 76px;
+  padding-inline: 12px;
+  border-color: var(--border);
+  background: var(--background);
+  color: var(--foreground);
+  font-weight: 550;
+}
+
+.shadcn-theme .complete-button:hover {
+  border-color: var(--border);
+  background: var(--accent);
+}
+
+.shadcn-theme .complete-button.is-complete,
+.shadcn-theme .complete-button.is-complete:hover {
+  border-color: var(--success);
+  background: var(--success);
+  color: var(--success-foreground);
+}
+
+.shadcn-theme .mode-switch {
+  padding: 3px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--muted);
+}
+
+.shadcn-theme .mode-button {
+  min-height: 38px;
+  border-radius: 5px;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.shadcn-theme .mode-button.is-active {
+  background: var(--background);
+  color: var(--foreground);
+  box-shadow: 0 1px 3px oklch(0.145 0 0 / 0.12);
+}
+
+.shadcn-theme .piece-thumbnail {
+  border-radius: 7px;
+}
+
+.shadcn-theme .piece-thumbnail:hover { background: var(--accent); }
+.shadcn-theme .piece-thumbnail.is-selected {
+  border-color: var(--foreground);
+  background: var(--accent);
+}
+
+.shadcn-theme .navigation-controls { gap: 8px; }
+
+.shadcn-theme .shuffle-button {
+  min-height: 40px;
+  border-radius: 7px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-size: 0.875rem;
+  font-weight: 550;
+}
+
+.shadcn-theme .shuffle-button:hover { background: oklch(0.27 0 0); }
+
+.shadcn-theme .nav-button {
+  width: 40px;
+  height: 40px;
+}
+
+.shadcn-theme .catalog-progress {
+  height: 2px;
+  background: var(--muted);
+}
+
+.shadcn-theme .catalog-progress i { background: var(--foreground); }
+
+.shadcn-theme .library-dialog {
+  width: min(820px, calc(100vw - 32px));
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--popover);
+  color: var(--popover-foreground);
+  box-shadow: 0 10px 28px oklch(0.145 0 0 / 0.18);
+}
+
+.shadcn-theme .library-dialog::backdrop { background: oklch(0.145 0 0 / 0.52); }
+
+.shadcn-theme .library-header {
+  min-height: 74px;
+  border-color: var(--border);
+}
+
+.shadcn-theme .library-header h2 {
+  font-size: 1.125rem;
+  font-weight: 650;
+}
+
+.shadcn-theme .library-header p,
+.shadcn-theme .library-footer p,
+.shadcn-theme .language-control { color: var(--muted-foreground); }
+
+.shadcn-theme .icon-button {
+  width: 36px;
+  height: 36px;
+  flex-basis: 36px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.shadcn-theme .icon-button:hover {
+  border-color: var(--border);
+  background: var(--accent);
+}
+
+.shadcn-theme .library-search input {
+  height: 40px;
+  border-color: var(--input);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--foreground);
+  box-shadow: 0 1px 2px oklch(0.145 0 0 / 0.04);
+}
+
+.shadcn-theme .library-search input:focus {
+  border-color: var(--ring);
+  outline: 2px solid oklch(0.708 0 0 / 0.35);
+}
+
+.shadcn-theme .library-search input::placeholder { color: var(--muted-foreground); }
+
+.shadcn-theme .library-grid { gap: 10px; }
+
+.shadcn-theme .challenge-card {
+  border-color: var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--card-foreground);
+}
+
+.shadcn-theme .challenge-card:hover {
+  border-color: oklch(0.68 0 0);
+  background: var(--card);
+}
+
+.shadcn-theme .challenge-card-visual {
+  border-radius: 5px;
+  background: var(--muted);
+}
+
+.shadcn-theme .challenge-card-copy strong { font-weight: 600; }
+.shadcn-theme .challenge-card-copy small { color: var(--muted-foreground); }
+.shadcn-theme .challenge-card.is-complete { border-color: var(--success); }
+.shadcn-theme .challenge-card-check { background: var(--success); }
+
+.shadcn-theme .library-footer { border-color: var(--border); }
+
+.shadcn-theme .clear-progress-button {
+  border-color: var(--border);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+.shadcn-theme .clear-progress-button:hover {
+  border-color: var(--destructive);
+  color: var(--destructive);
+}
+
+.shadcn-theme .clear-progress-button.is-confirming {
+  border-color: var(--destructive);
+  background: var(--destructive);
+  color: var(--primary-foreground);
+}
+
+.shadcn-theme .piece-feedback,
+.shadcn-theme .solution-navigation,
+.shadcn-theme .fullscreen-hud {
+  border: 1px solid oklch(1 0 0 / 0.12);
+  background: oklch(0.205 0 0 / 0.94);
+  color: var(--primary-foreground);
+}
+
+@media (max-width: 900px) {
+  .shadcn-theme .topbar {
+    height: 52px;
+    padding-inline: 14px;
+  }
+
+  .shadcn-theme .workspace { min-height: calc(100dvh - 52px); }
+  .shadcn-theme .viewer {
+    min-height: 50dvh;
+    flex-basis: 50dvh;
+  }
+
+  .shadcn-theme .control-panel {
+    min-height: auto;
+    padding: 18px 16px 16px;
+    border-color: var(--border);
+  }
+
+  .shadcn-theme .challenge-heading { min-height: 108px; }
+  .shadcn-theme h1 {
+    margin-top: 8px;
+    font-size: 1.5rem;
+  }
+
+  .shadcn-theme .timer-bar {
+    min-height: 54px;
+    margin-bottom: 12px;
+  }
+
+  .shadcn-theme .library-dialog {
+    width: 100vw;
+    height: 100dvh;
+    border: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .shadcn-theme .viewer {
+    min-height: 47dvh;
+    flex-basis: 47dvh;
+  }
+
+  .shadcn-theme .control-panel { padding: 14px 12px; }
+}
