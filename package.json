@@ -1,0 +1,28 @@
+{
+  "name": "zoma",
+  "version": "1.0.0",
+  "description": "Interactive Soma cube challenge library",
+  "scripts": {
+    "data:build": "node scripts/build-challenges.mjs",
+    "data:intihuatana": "node scripts/build-intihuatana-study.mjs",
+    "review:build": "node scripts/build-review-catalog.mjs",
+    "dev": "vite",
+    "build": "npm run data:build && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Diego Cano",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/instrument-sans": "^5.3.0",
+    "lucide": "^0.544.0",
+    "nosleep.js": "^0.12.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  }
+}

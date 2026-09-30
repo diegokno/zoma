@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Retos tridimensionales exactos para el cubo Soma." />
+    <link rel="icon" type="image/svg+xml" href="/zoma-isotype.svg" />
+    <title>Zoma — Retos de cubo Soma</title>
+  </head>
+  <body class="shadcn-theme colorful-theme completion-action-v2 fixed-zoom language-flags no-difficulty">
+    <div id="app">
+      <header class="topbar">
+        <button id="menu-toggle" class="brand" type="button" aria-label="Abrir biblioteca" aria-haspopup="dialog">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </button>
+        <button id="wake-lock" class="wake-button" type="button" role="switch" aria-label="Mantener pantalla encendida" aria-checked="false">
+          <span class="wake-label">Always On</span>
+          <span class="wake-switch" aria-hidden="true"><span class="wake-switch-thumb"></span></span>
+        </button>
+      </header>
+
+      <dialog id="library-dialog" class="library-dialog" aria-label="Zoma">
+        <div class="library-shell">
+          <header class="library-header">
+            <div class="library-title-group">
+              <img class="library-wordmark" src="/zoma.svg" alt="Zoma" />
+              <p id="library-progress">0 de 83 completadas</p>
+            </div>
+            <div class="library-header-actions">
+              <div class="language-control">
+                <span id="language-label" class="sr-only">Idioma</span>
+                <select id="language-select" hidden aria-hidden="true" tabindex="-1">
+                  <option value="es">Español</option>
+                  <option value="en">English</option>
+                </select>
+                <button id="language-trigger" class="language-trigger" type="button" aria-haspopup="menu" aria-expanded="false">
+                  <span class="language-icon" aria-hidden="true"></span>
+                  <span id="language-code">ES</span>
+                  <span class="language-chevron" aria-hidden="true"></span>
+                </button>
+                <div id="language-menu" class="language-menu" role="menu" hidden>
+                  <button type="button" role="menuitemradio" data-language-choice="es" aria-checked="true">
+                    <span>Español</span><span class="language-check" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" role="menuitemradio" data-language-choice="en" aria-checked="false">
+                    <span>English</span><span class="language-check" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+              <button id="library-close" class="icon-button" type="button" aria-label="Cerrar biblioteca"></button>
+            </div>
+          </header>
+
+          <label class="library-search">
+            <span class="library-search-icon" aria-hidden="true"></span>
+            <span class="sr-only">Buscar figuras</span>
+            <input id="library-search" type="search" placeholder="Buscar una figura" autocomplete="off" />
+          </label>
+
+          <div id="library-grid" class="library-grid" aria-live="polite"></div>
+          <p id="library-empty" class="library-empty" hidden>No hay figuras con ese nombre.</p>
+
+          <footer class="library-footer">
+            <a class="support-link library-support-link" data-support-link href="https://ko-fi.com/diego_cano" target="_blank" rel="noopener noreferrer">
+              <span class="support-icon" aria-hidden="true"></span><span class="support-label">Apóyame en Ko-fi</span>
+            </a>
+            <button id="clear-progress" class="clear-progress-button" type="button"></button>
+          </footer>
+        </div>
+      </dialog>
+
+      <dialog id="clear-progress-dialog" class="confirm-dialog" aria-labelledby="clear-progress-title" aria-describedby="clear-progress-description">
+        <div class="confirm-dialog-body">
+          <span class="confirm-dialog-icon" aria-hidden="true"></span>
+          <h2 id="clear-progress-title">Borrar progreso</h2>
+          <p id="clear-progress-description">Las figuras completadas y los récords se guardan únicamente en este dispositivo. Esta acción los eliminará de forma permanente.</p>
+          <div class="confirm-dialog-actions">
+            <button id="clear-progress-cancel" type="button">Cancelar</button>
+            <button id="clear-progress-confirm" class="destructive-button" type="button">Borrar progreso</button>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog id="records-dialog" class="records-dialog" aria-labelledby="records-title">
+        <div class="records-dialog-shell">
+          <header class="records-dialog-header">
+            <div>
+              <p id="records-eyebrow">Historial del reto</p>
+              <h2 id="records-title">Récords</h2>
+            </div>
+            <button id="records-close" class="icon-button" type="button" aria-label="Cerrar récords"></button>
+          </header>
+          <div id="records-list" class="records-list"></div>
+          <p id="records-empty" class="records-empty" hidden>No hay tiempos guardados todavía.</p>
+        </div>
+      </dialog>
+
+      <main class="workspace">
+        <section class="viewer" aria-labelledby="challenge-title">
+          <div id="scene" class="scene" aria-label="Figura tridimensional interactiva"></div>
+          <button id="fullscreen-toggle" class="floating-button fullscreen-button" type="button" aria-label="Ver figura a pantalla completa" title="Ver figura a pantalla completa"></button>
+          <button id="reset-view" class="floating-button" type="button" aria-label="Restablecer vista y selección" title="Restablecer vista y selección"></button>
+          <div id="piece-feedback" class="piece-feedback" aria-live="polite"></div>
+          <div id="solution-navigation" class="solution-navigation" hidden>
+            <button id="previous-solution" type="button" aria-label="Solución anterior"></button>
+            <span id="solution-count">1 / 1</span>
+            <button id="next-solution" type="button" aria-label="Solución siguiente"></button>
+          </div>
+          <div class="fullscreen-hud" aria-label="Controles de pantalla completa">
+            <output id="fullscreen-timer-display" class="fullscreen-timer-display">00:00.0</output>
+            <button id="fullscreen-timer-toggle" type="button" aria-label="Iniciar cronómetro"></button>
+            <button id="fullscreen-mark-complete" class="fullscreen-complete" type="button" aria-label="Marcar figura como hecha" aria-pressed="false"></button>
+          </div>
+        </section>
+
+        <aside class="control-panel">
+          <div class="challenge-heading">
+            <div class="challenge-topline">
+              <p id="challenge-count" class="challenge-count">Reto 01 / 83</p>
+              <label class="difficulty-control">
+                <span>Dificultad</span>
+                <select id="difficulty-filter">
+                  <option value="all">Todas</option>
+                  <option value="easy">Fácil</option>
+                  <option value="medium">Media</option>
+                  <option value="hard">Difícil</option>
+                </select>
+              </label>
+            </div>
+            <h1 id="challenge-title">Cubo clásico</h1>
+            <p class="challenge-meta">
+              <span id="difficulty-label">Dificultad media</span>
+              <span>27 cubos</span>
+            </p>
+          </div>
+
+          <div class="timer-bar" aria-label="Cronómetro">
+            <div class="timer-readout">
+              <output id="timer-display" class="timer-display">00:00.0</output>
+              <span id="timer-record" class="timer-record">Sin registro</span>
+            </div>
+            <div class="timer-actions">
+              <button id="timer-toggle" class="timer-button timer-primary" type="button" aria-label="Iniciar cronómetro"></button>
+              <button id="timer-reset" class="timer-button" type="button" aria-label="Reiniciar cronómetro" title="Reiniciar cronómetro"></button>
+              <button id="mark-complete" class="timer-button complete-button" type="button" aria-label="Marcar figura como hecha" aria-pressed="false">
+                <span class="complete-icon" aria-hidden="true"></span>
+                <span class="complete-label">Hecho</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="mode-switch" role="group" aria-label="Modo de visualización">
+            <button class="mode-button is-active" type="button" data-mode="challenge" aria-pressed="true">Reto</button>
+            <button class="mode-button" type="button" data-mode="solution" aria-pressed="false">Solución</button>
+          </div>
+
+          <div id="piece-picker" class="piece-picker" aria-label="Piezas de la solución" hidden></div>
+
+          <div class="bottom-actions">
+            <div class="navigation-controls">
+              <button id="previous" class="nav-button" type="button" aria-label="Reto anterior" title="Reto anterior"></button>
+              <button id="shuffle" class="shuffle-button" type="button">Aleatorio</button>
+              <button id="next" class="nav-button" type="button" aria-label="Reto siguiente" title="Reto siguiente"></button>
+            </div>
+            <div class="catalog-progress" aria-hidden="true"><i id="catalog-progress"></i></div>
+            <footer class="donation-footer">
+              <a class="support-link" data-support-link href="https://ko-fi.com/diego_cano" target="_blank" rel="noopener noreferrer">
+                <span class="support-icon" aria-hidden="true"></span><span class="support-label">Apóyame en Ko-fi</span>
+              </a>
+            </footer>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/colorful.js"></script>
+  </body>
+</html>
