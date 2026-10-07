@@ -4547,6 +4547,11 @@
       [
         0,
         1,
+        0
+      ],
+      [
+        0,
+        1,
         1
       ],
       [
@@ -4556,11 +4561,6 @@
       ],
       [
         1,
-        0,
-        1
-      ],
-      [
-        1,
         1,
         0
       ],
@@ -4572,17 +4572,17 @@
       [
         1,
         2,
+        0
+      ],
+      [
+        1,
+        2,
         1
       ],
       [
         2,
         1,
         0
-      ],
-      [
-        2,
-        1,
-        1
       ],
       [
         2,
@@ -4597,17 +4597,17 @@
       [
         2,
         3,
+        0
+      ],
+      [
+        2,
+        3,
         1
       ],
       [
         3,
         2,
         0
-      ],
-      [
-        3,
-        2,
-        1
       ],
       [
         3,
@@ -4622,17 +4622,17 @@
       [
         3,
         4,
+        0
+      ],
+      [
+        3,
+        4,
         1
       ],
       [
         4,
         3,
         0
-      ],
-      [
-        4,
-        3,
-        1
       ],
       [
         4,
@@ -4647,17 +4647,17 @@
       [
         4,
         5,
+        0
+      ],
+      [
+        4,
+        5,
         1
       ],
       [
         5,
         4,
         0
-      ],
-      [
-        5,
-        4,
-        1
       ],
       [
         5,
@@ -4677,22 +4677,22 @@
           [
             0,
             0,
+            1
+          ],
+          [
+            0,
+            1,
             0
           ],
           [
-            1,
             0,
-            0
-          ],
-          [
             1,
-            0,
             1
           ],
           [
             1,
             1,
-            0
+            1
           ]
         ]
       },
@@ -4700,24 +4700,24 @@
         "id": "p",
         "cubes": [
           [
-            2,
             1,
-            0
-          ],
-          [
-            2,
             2,
             0
           ],
           [
-            3,
-            2,
-            0
-          ],
-          [
-            3,
+            1,
             2,
             1
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            0
           ]
         ]
       },
@@ -4727,12 +4727,12 @@
           [
             4,
             4,
-            0
+            1
           ],
           [
-            5,
             4,
-            0
+            5,
+            1
           ],
           [
             5,
@@ -4752,22 +4752,22 @@
           [
             0,
             0,
-            1
+            0
           ],
           [
+            1,
             0,
-            1,
-            1
+            0
           ],
           [
             1,
             1,
-            1
+            0
           ],
           [
-            1,
             2,
-            1
+            1,
+            0
           ]
         ]
       },
@@ -4775,24 +4775,24 @@
         "id": "t",
         "cubes": [
           [
+            4,
             3,
-            4,
-            1
+            0
           ],
           [
             4,
             4,
-            1
+            0
           ],
           [
             4,
             5,
-            1
+            0
           ],
           [
             5,
             4,
-            1
+            0
           ]
         ]
       },
@@ -4800,23 +4800,23 @@
         "id": "l",
         "cubes": [
           [
-            2,
-            1,
-            1
-          ],
-          [
-            2,
-            2,
-            1
-          ],
-          [
-            2,
             3,
-            1
+            2,
+            0
           ],
           [
             3,
             3,
+            0
+          ],
+          [
+            3,
+            4,
+            0
+          ],
+          [
+            3,
+            4,
             1
           ]
         ]
@@ -4825,17 +4825,17 @@
         "id": "3",
         "cubes": [
           [
-            3,
-            3,
-            0
+            2,
+            2,
+            1
           ],
           [
-            4,
+            2,
             3,
-            0
+            1
           ],
           [
-            4,
+            3,
             3,
             1
           ]
@@ -4843,33 +4843,33 @@
       }
     ],
     "solutions": [
-      "czzccczzplpllpp3lt33nttntnn",
-      "pptptptt333zznnnzznlcllcccl",
-      "333llzllztzttztcccncnnppnpp",
-      "cccpcpnnppnntztztlztzl3ll33",
-      "nnnnttttllpllppcpzccczz333z",
-      "ccczcz33z3znlnnnltllttpptpp",
-      "cllcccltzlzttztzpppp3nn33nn",
-      "pppnnnptnt3tl3t3lzllzzczccc",
-      "nnnnlcllcccl3z3z3tztztpptpp",
-      "cllccclpplppnnnzntztzt3zt33",
-      "pp3p3p3tztzttzlzllnnnlcnccc",
-      "ppp333pnnnzntztzttzlcllcccl",
-      "ccczczzzll3ll3t3ttptpnnppnn",
-      "nnnncccppcpptztzttzlzll333l",
-      "nnnntzttztz33z3cllccclpplpp",
-      "cccpcpllppzl3zlz33ztnttntnn",
-      "3ll33zltzlzttztnnnnpppcpccc",
-      "cccncnntznzttztzll333lpplpp",
-      "pptptpttllcllccczznnnzzn333",
-      "nnnnttttppzp3zpz33zlcllcccl",
-      "nnnnl3ll33zltztzttzpppcpccc",
-      "33tz3zttztzppppnnnnlcllcccl",
-      "cllcccl3zlz33znzntnnttpptpp",
-      "3zz33czzcccllnnnltnlttpptpp"
+      "zccczzcppzp3p3ll3llttntntnn",
+      "ppnnppncnccctzttztzllzll333",
+      "nntnnttlltlppplpccczzc33zz3",
+      "33ll3lztzltztztcccpcnpppnnn",
+      "pptpttp33tz3nnzznlnzlcccllc",
+      "lcccllclz33znz3nznnttttpppp",
+      "cccpclpppllzlzttztztnn3nn33",
+      "nnpnnpptptt3t3ll3llzzzczccc",
+      "pp33pp3tzttzlztlznnllncnccc",
+      "cccncnnnzttztztlz33ll3lpppp",
+      "ccczczzllzl3t3lt3tntnnnpppp",
+      "nnlnnlcccllctzttz3zt3z3pppp",
+      "333ppppnnnnztzttzlztlcccllc",
+      "z333zzccczlcnnllnlnttttpppp",
+      "lcccllclzttztztpzppp3n3n3nn",
+      "nntnnttpptpzpz33zlz3lcccllc",
+      "lcccllclppppnnnnztzttz3zt33",
+      "cccncnnnpppptzttzlztlz33ll3",
+      "pptpttplltlccclzcnnzzn3nz33",
+      "nntnntztzt3z3z3lcccllclpppp",
+      "l333llzlzttztztnncnncccpppp",
+      "333zttztztpzpppnnlnnlcccllc",
+      "ccczc3z3z3nznnllnllttttpppp",
+      "ccczczzllzlppplp333ttntntnn"
     ],
     "metrics": {
-      "nodes": 2067,
+      "nodes": 2065,
       "placements": 283,
       "solutions": 104,
       "storedSolutions": 24,

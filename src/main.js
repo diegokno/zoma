@@ -150,6 +150,7 @@ const translations = {
     updateNow: "Actualizar",
     updateLater: "Más tarde",
     updateDone: "Entendido",
+    tryNewChallenge: "Probar un reto nuevo",
     closeUpdate: "Cerrar aviso",
   },
   en: {
@@ -233,6 +234,7 @@ const translations = {
     updateNow: "Update",
     updateLater: "Later",
     updateDone: "Got it",
+    tryNewChallenge: "Try a new challenge",
     closeUpdate: "Close notice",
   },
 };
@@ -282,6 +284,7 @@ const updateNotice = document.querySelector("#update-notice");
 const updateNoticeIcon = document.querySelector("#update-notice-icon");
 const updateNoticeTitle = document.querySelector("#update-notice-title");
 const updateNoticeDescription = document.querySelector("#update-notice-description");
+const updateNoticePreview = document.querySelector("#update-notice-preview");
 const updateNoticePrimary = document.querySelector("#update-notice-primary");
 const updateNoticeSecondary = document.querySelector("#update-notice-secondary");
 const updateNoticeClose = document.querySelector("#update-notice-close");
@@ -410,9 +413,16 @@ function renderUpdateNotice() {
   updateNoticeDescription.textContent = isUpdate
     ? `${t("updateDescription")} ${notes.title}: ${notes.description}`
     : notes.description;
-  updateNoticePrimary.textContent = isUpdate ? t("updateNow") : t("updateDone");
-  updateNoticeSecondary.textContent = t("updateLater");
-  updateNoticeSecondary.hidden = !isUpdate;
+  const featuredChallenges = (availableRelease.featuredChallengeIds ?? [])
+    .map((id) => challenges.find((challenge) => challenge.id === id))
+    .filter(Boolean);
+  updateNoticePreview.innerHTML = featuredChallenges
+    .map((challenge) => `<span>${challengeThumbnailSvg(challenge.target)}</span>`)
+    .join("");
+  updateNoticePreview.hidden = featuredChallenges.length === 0;
+  updateNoticePrimary.textContent = isUpdate ? t("updateNow") : t("tryNewChallenge");
+  updateNoticeSecondary.textContent = isUpdate ? t("updateLater") : t("updateDone");
+  updateNoticeSecondary.hidden = false;
   updateNoticeClose.setAttribute("aria-label", t("closeUpdate"));
   updateNoticeClose.innerHTML = iconMarkup(X);
 }
@@ -421,12 +431,25 @@ function showUpdateNotice(mode, targetRelease) {
   updateNoticeMode = mode;
   availableRelease = targetRelease;
   renderUpdateNotice();
-  updateNotice.hidden = false;
+  if (!updateNotice.open) showModalWithoutInitialControlFocus(updateNotice);
 }
 
 function hideUpdateNotice() {
-  updateNotice.hidden = true;
+  if (updateNotice.open) updateNotice.close();
   updateNoticeMode = null;
+}
+
+function openRandomReleaseChallenge() {
+  const releaseChallenges = (availableRelease?.challengeIds ?? [])
+    .filter((id) => challenges.some((challenge) => challenge.id === id));
+  if (!releaseChallenges.length) {
+    hideUpdateNotice();
+    return;
+  }
+  const challengeId = releaseChallenges[Math.floor(Math.random() * releaseChallenges.length)];
+  markReleaseSeen(availableRelease.version);
+  hideUpdateNotice();
+  openChallenge(challengeId);
 }
 
 function markReleaseSeen(version) {
@@ -1438,7 +1461,7 @@ function applyLanguage() {
   updateInterface();
   if (libraryDialog.open) renderLibrary();
   if (recordsDialog.open) renderRecordsDialog();
-  if (!updateNotice.hidden) renderUpdateNotice();
+  if (updateNotice.open) renderUpdateNotice();
 }
 
 document.querySelector("#reset-view").innerHTML = iconMarkup(RotateCcw);
@@ -1457,11 +1480,15 @@ updateNoticePrimary.addEventListener("click", () => {
     installAvailableUpdate();
     return;
   }
-  if (availableRelease) markReleaseSeen(availableRelease.version);
-  hideUpdateNotice();
+  openRandomReleaseChallenge();
 });
 updateNoticeSecondary.addEventListener("click", () => {
-  if (availableRelease) deferUpdate(availableRelease.version);
+  if (updateNoticeMode === "update" && availableRelease) {
+    deferUpdate(availableRelease.version);
+    return;
+  }
+  if (availableRelease) markReleaseSeen(availableRelease.version);
+  hideUpdateNotice();
 });
 updateNoticeClose.addEventListener("click", () => {
   if (updateNoticeMode === "update" && availableRelease) {
@@ -1470,6 +1497,10 @@ updateNoticeClose.addEventListener("click", () => {
   }
   if (availableRelease) markReleaseSeen(availableRelease.version);
   hideUpdateNotice();
+});
+updateNotice.addEventListener("cancel", (event) => {
+  event.preventDefault();
+  updateNoticeClose.click();
 });
 document.querySelector(".language-chevron").innerHTML = iconMarkup(ChevronDown);
 document.querySelector(".language-icon").innerHTML = iconMarkup(Languages);

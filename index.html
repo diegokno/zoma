@@ -247,18 +247,21 @@
         </aside>
       </main>
 
-      <aside id="update-notice" class="update-notice" hidden aria-live="polite" aria-labelledby="update-notice-title">
-        <span id="update-notice-icon" class="update-notice-icon" aria-hidden="true"></span>
-        <div class="update-notice-copy">
-          <strong id="update-notice-title"></strong>
-          <p id="update-notice-description"></p>
+      <dialog id="update-notice" class="update-modal" aria-labelledby="update-notice-title" aria-describedby="update-notice-description">
+        <div class="update-modal-shell">
+          <button id="update-notice-close" class="update-notice-close" type="button" aria-label="Cerrar"></button>
+          <span id="update-notice-icon" class="update-notice-icon" aria-hidden="true"></span>
+          <div class="update-notice-copy">
+            <h2 id="update-notice-title"></h2>
+            <p id="update-notice-description"></p>
+          </div>
+          <div id="update-notice-preview" class="update-notice-preview" aria-hidden="true"></div>
+          <div class="update-notice-actions">
+            <button id="update-notice-primary" type="button"></button>
+            <button id="update-notice-secondary" type="button"></button>
+          </div>
         </div>
-        <div class="update-notice-actions">
-          <button id="update-notice-secondary" type="button"></button>
-          <button id="update-notice-primary" type="button"></button>
-        </div>
-        <button id="update-notice-close" class="update-notice-close" type="button" aria-label="Cerrar"></button>
-      </aside>
+      </dialog>
     </div>
     <script type="module" src="/src/colorful.js"></script>
   </body>
