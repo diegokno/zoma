@@ -1,13 +1,13 @@
 const release = {
-  version: "2026.10.07-89",
+  version: "2026.10.07-115",
   notes: {
     es: {
-      title: "6 formas nuevas",
-      description: "Creeper, Intihuatana, Cerdo de Minecraft, Abeja, Alhelí y Tiburón martillo ya están en la biblioteca.",
+      title: "26 formas nuevas",
+      description: "Avión, Horca, Camello, Oso y 22 retos más ya están disponibles en la biblioteca.",
     },
     en: {
-      title: "6 new shapes",
-      description: "Creeper, Intihuatana, Minecraft Pig, Bee, Wallflower, and Hammerhead Shark are now in the library.",
+      title: "26 new shapes",
+      description: "Aeroplane, Gallows, Camel, Bear, and 22 more challenges are now available in the library.",
     },
   },
 };

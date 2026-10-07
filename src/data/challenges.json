@@ -2431,6 +2431,722 @@
     "difficulty": "medium"
   },
   {
+    "id": "hb3f-34",
+    "name": "Alto y bajo 1",
+    "names": {
+      "es": "Alto y bajo 1",
+      "en": "High and low 1"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=34",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        1,
+        5,
+        0
+      ],
+      [
+        1,
+        5,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        2,
+        5,
+        0
+      ],
+      [
+        2,
+        5,
+        1
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        0
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        5,
+        1
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            0
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            2,
+            4,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            0
+          ],
+          [
+            3,
+            4,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            5,
+            0
+          ],
+          [
+            1,
+            5,
+            1
+          ],
+          [
+            2,
+            4,
+            0
+          ],
+          [
+            2,
+            5,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            3,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            2,
+            5,
+            1
+          ],
+          [
+            3,
+            5,
+            0
+          ],
+          [
+            3,
+            5,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "tzzttzzcccnntlllpncn3lppp33",
+      "llnl3nnnpppzl33cccpzzctttzt",
+      "llllzztpt3t3zzppptnc3nncncc",
+      "tttltccc333zlllcnpzpznnnzpp",
+      "l33l3ttttcccllzzzpzncpppnnn",
+      "llzlzznncctclznn3pctt33pptp",
+      "lllltppzczcctttppnzcz33n3nn",
+      "l33l3pppnntnllpccncttzczztz",
+      "llllzz3tptptzz33cntppccncnn",
+      "lllltnnnzppptttznzcp3zccc33",
+      "tttltzznnnpplllznzpcp33c3cc",
+      "llzl3zztttctl33zncpccnnnppp",
+      "tttltnnncczclllpn3czzpp3p3z",
+      "llzlzzctttntlzcccpnnnppp333",
+      "l33l3zzzpzppllnnnpccctntttc",
+      "llll3pppcczc33pnntczztntntz",
+      "llzlzzpppnnnlz33pcncc3tttct",
+      "llllzzt3n3nnzztt3pcpntcccpp",
+      "lllltcccz333tttcpzpznppnnzn",
+      "llll3zccpcpp33zzcptnnztntnt",
+      "tzzttzzppp33tllllpnc3nncncc",
+      "tttltzzzczcclll333ncpnnpnpp",
+      "llzlzznn333tlzppncnttppccct",
+      "llzlzz33c3cclzttptncntpppnn"
+    ],
+    "metrics": {
+      "nodes": 4594,
+      "placements": 426,
+      "solutions": 284,
+      "storedSolutions": 24,
+      "rawSolutions": 284,
+      "symmetries": 1,
+      "fillRatio": 0.563,
+      "surfaceArea": 68,
+      "truncated": false,
+      "score": 11.314
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "hb3f-35",
+    "name": "Alto y bajo 2",
+    "names": {
+      "es": "Alto y bajo 2",
+      "en": "High and low 2"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=35",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        2,
+        5,
+        0
+      ],
+      [
+        2,
+        5,
+        1
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        0
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        5,
+        1
+      ],
+      [
+        4,
+        3,
+        0
+      ],
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        0
+      ],
+      [
+        4,
+        5,
+        1
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            3,
+            0
+          ],
+          [
+            4,
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            2,
+            4,
+            0
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            2,
+            5,
+            1
+          ],
+          [
+            3,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            5,
+            0
+          ],
+          [
+            3,
+            5,
+            0
+          ],
+          [
+            3,
+            5,
+            1
+          ],
+          [
+            4,
+            5,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            4,
+            4,
+            0
+          ],
+          [
+            4,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "llzlzzlzcccnntncpnpttpp33t3",
+      "l33l3nllnnnzcccppztzcptptzt",
+      "llll3z33zztptptzcntppccncnn",
+      "llzlzzlznnntppp3nttpc33tccc",
+      "llllzzzztt3tccct3p3ncpppnnn",
+      "llzlzzlz333ctccntntcpnnptpp",
+      "l33l3nllnnnpptpcztztpcccztz",
+      "l33l3zllzztttctzncpccnnnppp",
+      "llllzzzzcccptppcnpt3tnnnt33",
+      "llll3n33nnnczccpppzcztptttz",
+      "llzlzzlznnnccctpnct3tpp3p3t",
+      "llzlzzlzttntn33tcnn3pccpcpp",
+      "llllzzzzpptttctppcnccnn3n33",
+      "llllzzzzttttpppcccnpnc333nn",
+      "llll3n33nnnppptcccpttczzzzt",
+      "llzlzzlz333ptppctptntcccnnn",
+      "llllzzzznnncctc3npctt33pptp",
+      "llllzzzzttttp33pnpp3cnnnccc",
+      "llzlzzlzcccntnnctptpn333tpp",
+      "llzlzzlzttttcccnnpnpcn333pp",
+      "llllzzzznnn3t33cnptptccctpp",
+      "llllzzzz333tccctntptcnnnppp",
+      "l33l3nllnnncctcpppcttzpzztz",
+      "llllzzzzccc3t33ctptntpppnnn"
+    ],
+    "metrics": {
+      "nodes": 2037,
+      "placements": 390,
+      "solutions": 132,
+      "storedSolutions": 24,
+      "rawSolutions": 132,
+      "symmetries": 1,
+      "fillRatio": 0.45,
+      "surfaceArea": 70,
+      "truncated": false,
+      "score": 12.031
+    },
+    "difficulty": "medium"
+  },
+  {
     "id": "arch",
     "name": "Arco",
     "names": {
@@ -3111,6 +3827,348 @@
     "difficulty": "hard"
   },
   {
+    "id": "hb3f-22",
+    "name": "Avión",
+    "names": {
+      "es": "Avión",
+      "en": "Aeroplane"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=22",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        1,
+        5,
+        0
+      ],
+      [
+        1,
+        6,
+        0
+      ],
+      [
+        1,
+        6,
+        1
+      ],
+      [
+        2,
+        5,
+        0
+      ],
+      [
+        2,
+        6,
+        0
+      ],
+      [
+        2,
+        6,
+        1
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        0
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        3,
+        5,
+        0
+      ],
+      [
+        3,
+        5,
+        1
+      ],
+      [
+        3,
+        6,
+        0
+      ],
+      [
+        3,
+        6,
+        1
+      ],
+      [
+        4,
+        5,
+        0
+      ],
+      [
+        4,
+        6,
+        0
+      ],
+      [
+        4,
+        6,
+        1
+      ],
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        5,
+        6,
+        0
+      ],
+      [
+        5,
+        6,
+        1
+      ],
+      [
+        6,
+        6,
+        1
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            2,
+            5,
+            0
+          ],
+          [
+            2,
+            6,
+            0
+          ],
+          [
+            2,
+            6,
+            1
+          ],
+          [
+            3,
+            6,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            6,
+            1
+          ],
+          [
+            1,
+            5,
+            0
+          ],
+          [
+            1,
+            6,
+            0
+          ],
+          [
+            1,
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            5,
+            5,
+            0
+          ],
+          [
+            5,
+            6,
+            0
+          ],
+          [
+            5,
+            6,
+            1
+          ],
+          [
+            6,
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            3,
+            2,
+            1
+          ],
+          [
+            3,
+            3,
+            0
+          ],
+          [
+            3,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            3,
+            5,
+            0
+          ],
+          [
+            3,
+            5,
+            1
+          ],
+          [
+            3,
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            3,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            4,
+            5,
+            0
+          ],
+          [
+            4,
+            6,
+            0
+          ],
+          [
+            4,
+            6,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "ppppcccllllzzzztttct333nnnn",
+      "pppp333llllzzzztttctcccnnnn",
+      "ppppzzclllltttztzccc333nnnn",
+      "ppppccclllltttztz3c3zz3nnnn",
+      "ppppccclllltttztzzcz333nnnn",
+      "ppppzz3lllltttztz3c3cccnnnn",
+      "pppp333lllltttztzzczcccnnnn",
+      "pppp333lllltttztzccczzcnnnn"
+    ],
+    "metrics": {
+      "nodes": 120,
+      "placements": 220,
+      "solutions": 8,
+      "storedSolutions": 8,
+      "rawSolutions": 8,
+      "symmetries": 1,
+      "fillRatio": 0.276,
+      "surfaceArea": 86,
+      "truncated": false,
+      "score": 14.191
+    },
+    "difficulty": "hard"
+  },
+  {
     "id": "bench-2",
     "name": "Banco",
     "names": {
@@ -3489,12 +4547,12 @@
       [
         0,
         1,
-        0
+        1
       ],
       [
-        0,
         1,
-        1
+        0,
+        0
       ],
       [
         1,
@@ -3514,12 +4572,12 @@
       [
         1,
         2,
-        0
+        1
       ],
       [
-        1,
         2,
-        1
+        1,
+        0
       ],
       [
         2,
@@ -3539,12 +4597,12 @@
       [
         2,
         3,
-        0
+        1
       ],
       [
-        2,
         3,
-        1
+        2,
+        0
       ],
       [
         3,
@@ -3564,12 +4622,12 @@
       [
         3,
         4,
-        0
+        1
       ],
       [
-        3,
         4,
-        1
+        3,
+        0
       ],
       [
         4,
@@ -3589,12 +4647,12 @@
       [
         4,
         5,
-        0
+        1
       ],
       [
-        4,
         5,
-        1
+        4,
+        0
       ],
       [
         5,
@@ -3622,13 +4680,13 @@
             0
           ],
           [
-            0,
             1,
+            0,
             0
           ],
           [
-            0,
             1,
+            0,
             1
           ],
           [
@@ -3642,23 +4700,23 @@
         "id": "p",
         "cubes": [
           [
-            4,
-            4,
+            2,
+            1,
             0
           ],
           [
-            4,
-            5,
+            2,
+            2,
             0
           ],
           [
-            5,
-            5,
+            3,
+            2,
             0
           ],
           [
-            5,
-            5,
+            3,
+            2,
             1
           ]
         ]
@@ -3667,23 +4725,23 @@
         "id": "n",
         "cubes": [
           [
-            1,
-            2,
+            4,
+            4,
             0
           ],
           [
-            1,
-            2,
-            1
+            5,
+            4,
+            0
           ],
           [
-            2,
-            2,
-            1
+            5,
+            5,
+            0
           ],
           [
-            2,
-            3,
+            5,
+            5,
             1
           ]
         ]
@@ -3697,8 +4755,8 @@
             1
           ],
           [
-            1,
             0,
+            1,
             1
           ],
           [
@@ -3707,8 +4765,8 @@
             1
           ],
           [
+            1,
             2,
-            1,
             1
           ]
         ]
@@ -3717,8 +4775,8 @@
         "id": "t",
         "cubes": [
           [
-            4,
             3,
+            4,
             1
           ],
           [
@@ -3742,23 +4800,23 @@
         "id": "l",
         "cubes": [
           [
-            3,
+            2,
+            1,
+            1
+          ],
+          [
+            2,
             2,
             1
           ],
           [
-            3,
+            2,
             3,
             1
           ],
           [
             3,
-            4,
-            0
-          ],
-          [
             3,
-            4,
             1
           ]
         ]
@@ -3767,48 +4825,48 @@
         "id": "3",
         "cubes": [
           [
-            2,
-            2,
-            0
-          ],
-          [
-            2,
+            3,
             3,
             0
           ],
           [
-            3,
+            4,
             3,
             0
+          ],
+          [
+            4,
+            3,
+            1
           ]
         ]
       }
     ],
     "solutions": [
-      "czcczcznnz3n3nl3llltptpttpp",
-      "nnppnpnpcccczttztztlzlll333",
-      "ppptpttlltnlnnlcncczcz33z3z",
-      "33ll3zlztlztzttccpccppnpnnn",
-      "nnnttnt33t3zppzpzplzclcclcl",
-      "clcclclzl3z3zt3ztnttnpnnppp",
-      "cczccz3z33zlpplplpltttntnnn",
-      "pppnpnnntt3t3tl3lllzzzzcccc",
-      "ppplpclcclclz33z3zttztntnnn",
-      "ccnccnpnnpppzttztzltzl33l3l",
-      "nn33n3nzttztzltzlpplplpcccc",
-      "clcclclnlnnnpppzpzttztz3t33",
-      "ccpccppzptztzttzl33l3lnlnnn",
-      "ccnccnlnnlzlzl3z3zt3ptpttpp",
-      "ppptpttnntznzn3z3zl3clcclcl",
-      "33nn3znzntztzttppplpclcclcl",
-      "ppptpztzttz3z33clcclclnlnnn",
-      "ppplp3l33lzlzttztzntnnncccc",
-      "nnnttntlltclcclczppzpzp3z33",
-      "czcczczllz3l3tl3tpttppnpnnn",
-      "nn33n3npppzpzttztzltclcclcl",
-      "3z33zczcczcppplpllltttntnnn",
-      "clcclclzltztzttz3p33ppnpnnn",
-      "cczcczzllznlnnl3n33tptpttpp"
+      "czzccczzplpllpp3lt33nttntnn",
+      "pptptptt333zznnnzznlcllcccl",
+      "333llzllztzttztcccncnnppnpp",
+      "cccpcpnnppnntztztlztzl3ll33",
+      "nnnnttttllpllppcpzccczz333z",
+      "ccczcz33z3znlnnnltllttpptpp",
+      "cllcccltzlzttztzpppp3nn33nn",
+      "pppnnnptnt3tl3t3lzllzzczccc",
+      "nnnnlcllcccl3z3z3tztztpptpp",
+      "cllccclpplppnnnzntztzt3zt33",
+      "pp3p3p3tztzttzlzllnnnlcnccc",
+      "ppp333pnnnzntztzttzlcllcccl",
+      "ccczczzzll3ll3t3ttptpnnppnn",
+      "nnnncccppcpptztzttzlzll333l",
+      "nnnntzttztz33z3cllccclpplpp",
+      "cccpcpllppzl3zlz33ztnttntnn",
+      "3ll33zltzlzttztnnnnpppcpccc",
+      "cccncnntznzttztzll333lpplpp",
+      "pptptpttllcllccczznnnzzn333",
+      "nnnnttttppzp3zpz33zlcllcccl",
+      "nnnnl3ll33zltztzttzpppcpccc",
+      "33tz3zttztzppppnnnnlcllcccl",
+      "cllcccl3zlz33znzntnnttpptpp",
+      "3zz33czzcccllnnnltnlttpptpp"
     ],
     "metrics": {
       "nodes": 2067,
@@ -4537,6 +5595,364 @@
       "score": 12.85
     },
     "difficulty": "medium"
+  },
+  {
+    "id": "hb3f-21",
+    "name": "Barco de vapor",
+    "names": {
+      "es": "Barco de vapor",
+      "en": "Steamer"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=21",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        2,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            2,
+            4,
+            0
+          ],
+          [
+            3,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            0
+          ],
+          [
+            4,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "nnptnnppptt3tzzcccl33zzclll",
+      "cnncccnnzllpl33z3zltpppzttt",
+      "tttcpptplccclnnlpl33nznz3zz",
+      "zztzzntntllc3ccnntlpp3c3lpp",
+      "lllzzccclzzptpptct33pnnt3nn",
+      "3nn33tnnpllztttppplzzccclzc",
+      "zzpzzcppptnnlcc3c3ttnln3tll",
+      "ttt333tpznnncppzpzlcncczlll",
+      "nntcnntptccc3pp3ptzzzlz3lll",
+      "tnnttcnnzppptcczczp33l3zlll",
+      "czlccczzlppptnnlzlp3ntnt33t",
+      "tttzzztzplcccnnppplcn3n3ll3",
+      "nnpznnpppzzct33t3tzcclctlll",
+      "zzpzztpppl333ttccclnnntclln",
+      "llpzl3ppptzzl33cccttznnctnn",
+      "tnntt3nnpccct33ppplczzzzlll",
+      "lltzlntntzzplppnntz3pccc33c",
+      "cnncccnnplzztzzpppl33t3tllt",
+      "3nn33cnnlppplcclclptzzzzttt",
+      "nnt3nntzt33cpcczztlpppczlll",
+      "zztzzntnt33pcnncctl3pppclll",
+      "tllttppplnnntccpcl33nzcz3zz",
+      "nnpznnpppzz3lllccczt3l3cttt",
+      "nnpznnppplzztcc3c3ltztc3llt"
+    ],
+    "metrics": {
+      "nodes": 5317,
+      "placements": 446,
+      "solutions": 152,
+      "storedSolutions": 24,
+      "rawSolutions": 304,
+      "symmetries": 2,
+      "fillRatio": 0.36,
+      "surfaceArea": 74,
+      "truncated": false,
+      "score": 10.717
+    },
+    "difficulty": "easy"
   },
   {
     "id": "bb26",
@@ -6659,6 +8075,352 @@
     "difficulty": "hard"
   },
   {
+    "id": "hb3f-23",
+    "name": "Cama",
+    "names": {
+      "es": "Cama",
+      "en": "Bed"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=23",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        6,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        1,
+        5,
+        0
+      ],
+      [
+        1,
+        6,
+        0
+      ],
+      [
+        1,
+        6,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        2,
+        5,
+        0
+      ],
+      [
+        2,
+        6,
+        0
+      ],
+      [
+        2,
+        6,
+        1
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            6,
+            0
+          ],
+          [
+            0,
+            6,
+            1
+          ],
+          [
+            1,
+            5,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            1,
+            4,
+            0
+          ],
+          [
+            2,
+            4,
+            0
+          ],
+          [
+            2,
+            5,
+            0
+          ],
+          [
+            2,
+            6,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            1,
+            6,
+            0
+          ],
+          [
+            1,
+            6,
+            1
+          ],
+          [
+            2,
+            6,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "ccctttpppcnzztlp33nnnzzlll3",
+      "cccttt333cnzztlllpnnnzzlppp",
+      "ccczzl333cnzztlllpnnntttppp",
+      "ccczzlllpcnzztlpppnnnttt333",
+      "ccctllz33cnttlzz3pnnntlzppp",
+      "ccctlll33cnttlzz3pnnntzzppp",
+      "pppttt333cpzztlnnnccczzllln",
+      "ppptttnnncpzztlllnccczzl333",
+      "pppzzlnnncpzztlllncccttt333",
+      "pppzzlll3cpzztln33ccctttnnn",
+      "ppptzznnncpttlzz3nccctlll33",
+      "ppptlznnncpttlzz3nccctllz33"
+    ],
+    "metrics": {
+      "nodes": 726,
+      "placements": 252,
+      "solutions": 12,
+      "storedSolutions": 12,
+      "rawSolutions": 24,
+      "symmetries": 2,
+      "fillRatio": 0.643,
+      "surfaceArea": 78,
+      "truncated": false,
+      "score": 10.807
+    },
+    "difficulty": "easy"
+  },
+  {
     "id": "long-bed",
     "name": "Cama larga",
     "names": {
@@ -6998,6 +8760,342 @@
       "score": 13.163
     },
     "difficulty": "medium"
+  },
+  {
+    "id": "hb3f-47",
+    "name": "Camello",
+    "names": {
+      "es": "Camello",
+      "en": "Camel"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=47",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        1,
+        4,
+        5
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            3
+          ],
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            1,
+            4
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            3,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            1,
+            3,
+            3
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "pppccczzptzzcntttllll333nnn",
+      "333pppzzntzzcptttllllnnnccc"
+    ],
+    "metrics": {
+      "nodes": 23,
+      "placements": 197,
+      "solutions": 2,
+      "storedSolutions": 2,
+      "rawSolutions": 2,
+      "symmetries": 1,
+      "fillRatio": 0.3,
+      "surfaceArea": 94,
+      "truncated": false,
+      "score": 14.929
+    },
+    "difficulty": "hard"
   },
   {
     "id": "canal",
@@ -7353,6 +9451,1070 @@
       "surfaceArea": 66,
       "truncated": false,
       "score": 8.082
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "hb3f-42",
+    "name": "Canguro",
+    "names": {
+      "es": "Canguro",
+      "en": "Kangaroo"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=42",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        3,
+        2
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        4,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            4,
+            0
+          ],
+          [
+            2,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            2,
+            5
+          ],
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            3,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            2,
+            4
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "nnltncl33tzlltpppncc3tzczpz",
+      "llltlcn33tznntpppccn3tzczpz",
+      "llltlcc33tznctpppnnc3tznzpz",
+      "llltnclzztncctpppnnzzt3c3p3",
+      "llltcclzztcnntpppcnzzt3n3p3",
+      "zlltpcl33tppltzzcpcc3tnnnzn",
+      "zpptlcp33tllltzzcccp3tnnnzn",
+      "zpctlcc33tllltzzpppc3tnnnzn",
+      "zpptncc33tnnctzzplpc3tlnlzl",
+      "zcctncp33tnnptzzclpp3tlnlzl",
+      "ppctpcc33tznntllplnc3tznzlz",
+      "ppntpcn33tzcctllplnn3tzczlz",
+      "pcctpclzztlllt33cppzztnnn3n",
+      "cpptcclzztlllt33pcpzztnnn3n"
+    ],
+    "metrics": {
+      "nodes": 253,
+      "placements": 314,
+      "solutions": 14,
+      "storedSolutions": 14,
+      "rawSolutions": 14,
+      "symmetries": 1,
+      "fillRatio": 0.3,
+      "surfaceArea": 84,
+      "truncated": false,
+      "score": 14.001
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "hb3f-08",
+    "name": "Casa esquinera 1",
+    "names": {
+      "es": "Casa esquinera 1",
+      "en": "Corner house 1"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=8",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            0,
+            3
+          ],
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "nntlcnt3cct3nzzlppt3czzllpp",
+      "ccztlczzlllz3cptnnptn3ppt3n",
+      "33llztcltttl3ncpzccpznnppnz",
+      "ppllp3lzt3lzcpnzt3nztccnnct",
+      "cc33cp3nppnnclzztzznptllltt",
+      "ppnn3pnl3lllztcczpnc3tttczz",
+      "ppzt3cct33ctpnzzpnctllnnzll",
+      "nnppzzcctzzc3npltnpct3lll3t",
+      "33zz3zznllnnctppccpnltttpcl",
+      "tpp3ttpltlllczz3nnp3ncczzcn",
+      "tttlzn3pnn33ctplznppzccllcz",
+      "zcppccp3lll3zznptcn3ltznntt",
+      "lllnczzncczzlt33ppnncttt3pp",
+      "nnzpntzztttzcc3pncppllc33ll",
+      "ccnnczzn33zzctnptttp3llppll",
+      "tzlltccntcnnzzpltcpn3zppl33",
+      "tttlctnlccnlzp3lzpnncpp33zz",
+      "nlllnnpl33ppzzcctnpc3tzzctt",
+      "ctttlptzlppzccnzcpnzl33nn3l",
+      "llppcctzctttlnpzcnpz3lnnz33",
+      "cczn3ctn3tttlczzppnn3lllzpp",
+      "cczlcpzztppzcn3ltp33tnnllnt",
+      "nnllcnzlcczln3zpt3zpct3pptt",
+      "33ppctpnccnn3zzptttncllzzll"
+    ],
+    "metrics": {
+      "nodes": 11063,
+      "placements": 479,
+      "solutions": 260,
+      "storedSolutions": 24,
+      "rawSolutions": 260,
+      "symmetries": 1,
+      "fillRatio": 0.75,
+      "surfaceArea": 66,
+      "truncated": false,
+      "score": 10.757
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "hb3f-09",
+    "name": "Casa esquinera 2",
+    "names": {
+      "es": "Casa esquinera 2",
+      "en": "Corner house 2"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=9",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        3
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            0,
+            3
+          ],
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            2,
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            0,
+            4
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "nnpp3cctz3ctttlnpz3cnpzlllz",
+      "tttccppzlcplllntz3cnpz3nnz3",
+      "tzlllzzn33znn3tccpltcnptcpp",
+      "lllcz3tlzztttz3pncc3pncppnn",
+      "l3zznl3pzzllppcctnnc3pncttt",
+      "pp33zln3cclllcptnzzpnnctttz",
+      "tcl33pcczzppzzttln3pcnntlln",
+      "tzpcct33nct3nnzzplctppnzlll",
+      "llzzplctppltttnc3zznccpnn33",
+      "ccltznclzznllz3cpttnnpp33pt",
+      "tnccptlcpptlll3nczztnnp33zz",
+      "ppltz3pntt33ntcclzzcpnncllz",
+      "lll33zpnn3zppnztlcczpnctttc",
+      "tllccnlpzcnlpptt3zcnnpzt33z",
+      "tlz33tlzz3tllznnpcctnpcnppc",
+      "33lll3tpcctttcnplzznppcnnzz",
+      "nnzccpn3lcpp33ntzzcpllltttz",
+      "33lllnppzznpzz3tcclnnpctttc",
+      "ltc33nttzzntzzlccp3nncpllpp",
+      "t3nnztpnzztppzl33cctpnclllc",
+      "tzz33ttncctnncplzz3ppncplll",
+      "llzcclzznclznn3tppc33pntttp",
+      "ccnn3lcnz3lllzpctz3ppnzpttt",
+      "ttt33ztlcclllcznpp3znpcznnp"
+    ],
+    "metrics": {
+      "nodes": 10750,
+      "placements": 473,
+      "solutions": 440,
+      "storedSolutions": 24,
+      "rawSolutions": 440,
+      "symmetries": 1,
+      "fillRatio": 0.6,
+      "surfaceArea": 68,
+      "truncated": false,
+      "score": 11.073
     },
     "difficulty": "easy"
   },
@@ -8732,6 +11894,364 @@
       "surfaceArea": 70,
       "truncated": false,
       "score": 12.145
+    },
+    "difficulty": "medium"
+  },
+  {
+    "id": "hb3f-11",
+    "name": "Corazón",
+    "names": {
+      "es": "Corazón",
+      "en": "Heart"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=11",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        3,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            2,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            3,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            3,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "zzllllczzcc3tntttppc3nn3npp",
+      "3tp3ppttt3pzzlczznnnlllcccn",
+      "nccnncl3clnztpzpp33ltttzpzl",
+      "llltttnnlntpp3zcczcnp33pczz",
+      "ppnpnntpnll3cctzctzl3zc3ztl",
+      "zz3t33nzzttccpcnpnntcppllll",
+      "cc3czzc33zzllltplnnntpptptn",
+      "ztntttznnzn3cl3ccppzlll3cpp",
+      "nn3n33zccnclllpplzcztttptpz",
+      "pt3p33zttppnccnncztzllclnlz",
+      "ccpcppczzlpnn3n33zzltttntll",
+      "zzltzzlllttnccnpc3ptnncpp33",
+      "llllzztttzznnpcnp3t3nppccc3",
+      "llltnntnltnzz3c33pptczzccpp",
+      "ccncnncpnpplllttt3tplzzzz33",
+      "ntllllnttnnpccppc3t3pzczzz3",
+      "pccppcpncnnzzllll3n3tzzttt3",
+      "lcnlnnccnlc3tpztpztl3pp3tzz",
+      "nccnzcnnczzptlptt3tzlllpp33",
+      "llltttpplptccncnn3p3cznzzz3",
+      "3cc33clpclpzzntzzppltnntntl",
+      "pp3tttp33ptzclzccnnnlllzczn",
+      "3cl3cclll3czzptppnnntzztptn",
+      "3tn3nnztn3tlcpccpztzlpplclz"
+    ],
+    "metrics": {
+      "nodes": 5468,
+      "placements": 379,
+      "solutions": 186,
+      "storedSolutions": 24,
+      "rawSolutions": 186,
+      "symmetries": 1,
+      "fillRatio": 0.563,
+      "surfaceArea": 72,
+      "truncated": false,
+      "score": 11.629
     },
     "difficulty": "medium"
   },
@@ -10867,6 +14387,700 @@
       "score": 12.094
     },
     "difficulty": "medium"
+  },
+  {
+    "id": "hb3f-36",
+    "name": "Dinosaurio 1",
+    "names": {
+      "es": "Dinosaurio 1",
+      "en": "Dinosaur 1"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=36",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        5,
+        1,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            3,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            4,
+            1,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            1,
+            4
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            3,
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "lppnzlllnnpcpzz3ncctcz33ttt",
+      "ltzttllltczzncpcczpnppnn333",
+      "l33zclllcc3pzpnzcpptnnznttt",
+      "lnnnplllppctnttptccczzzz333",
+      "lcc3clll3pncnpp3pnntzzzzttt",
+      "ltzzzlllzptntppcptncnncc333",
+      "lzczzllltzccpcnttpppnntn333",
+      "lczcclll33zzcnp3nzptppnnttt",
+      "lpppnlllcn3pcnncc33tzzzzttt",
+      "lnncnlllccnttttcpzzpzzpp333",
+      "l3n3clllcc3npnnpczztzzppttt",
+      "ltpttllltzcpppnzzcccnnzn333",
+      "lpppzlll33npnzz3cnntczccttt",
+      "lznzzllltzcntnntpcccpptp333",
+      "lnnzclllccznznp3czptpp33ttt",
+      "ltnttllltpnnnppcpzzczzcc333",
+      "lcpnplllnncccpp3nzztzz33ttt",
+      "ltnttllltpcnpnnppccczzzz333",
+      "l33nclllnn3cpccpnzztzzppttt",
+      "lcczclllpp3czpnzp33tnnznttt",
+      "ltzczlllccttnzpcztpnppnn333",
+      "ltzzzlllznttnnpcntpcppcc333",
+      "lnnpnlllppntpttctzzczzcc333",
+      "lcccplllppctnttptzznzznn333"
+    ],
+    "metrics": {
+      "nodes": 1478,
+      "placements": 482,
+      "solutions": 38,
+      "storedSolutions": 24,
+      "rawSolutions": 38,
+      "symmetries": 1,
+      "fillRatio": 0.3,
+      "surfaceArea": 72,
+      "truncated": false,
+      "score": 13.234
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "hb3f-37",
+    "name": "Dinosaurio 2",
+    "names": {
+      "es": "Dinosaurio 2",
+      "en": "Dinosaur 2"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=37",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        3
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        4
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        3,
+        1,
+        6
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        2,
+        2
+      ],
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        4,
+        1,
+        6
+      ],
+      [
+        4,
+        2,
+        0
+      ],
+      [
+        4,
+        2,
+        2
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            3,
+            2,
+            1
+          ],
+          [
+            4,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            3,
+            0,
+            3
+          ],
+          [
+            3,
+            1,
+            3
+          ],
+          [
+            4,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            3,
+            1,
+            4
+          ],
+          [
+            3,
+            1,
+            5
+          ],
+          [
+            3,
+            1,
+            6
+          ],
+          [
+            4,
+            1,
+            6
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            3,
+            2,
+            2
+          ],
+          [
+            3,
+            2,
+            3
+          ],
+          [
+            4,
+            2,
+            2
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "zzzztttccnncptnlllpp33cnlp3",
+      "zzzztttnn33cntplllccppn3lcp"
+    ],
+    "metrics": {
+      "nodes": 126,
+      "placements": 259,
+      "solutions": 2,
+      "storedSolutions": 2,
+      "rawSolutions": 2,
+      "symmetries": 1,
+      "fillRatio": 0.257,
+      "surfaceArea": 90,
+      "truncated": false,
+      "score": 15.015
+    },
+    "difficulty": "hard"
   },
   {
     "id": "double-w",
@@ -13009,6 +17223,364 @@
     "difficulty": "easy"
   },
   {
+    "id": "hb3f-27",
+    "name": "Escalera",
+    "names": {
+      "es": "Escalera",
+      "en": "Staircase"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=27",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        2,
+        4,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            3,
+            0
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            2,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "ccc3zl3zpncz3zlpppnnntllttt",
+      "nnntttltl3znzcpccl33pzppzcl",
+      "tlplppcccttplnncn3tzzlzz3n3",
+      "ppptzzzzlpcntnnt3lccct3nl3l",
+      "lzntnnppplzztcntp3llztcc3c3",
+      "ccctttztzlcnz33z3pllnlnnppp",
+      "cccnzpzzz3cpnppnnl33tlttltl",
+      "pppt33tttpcclc3nnnllclzzzzn",
+      "zzzpztcccnpppttc3lnnnl3tl3l",
+      "tzczccppptt3zcnzplt33lnnlnl",
+      "ppplll3c3pznzclcc3zzntnnttt",
+      "cccl3pl3tncplppt3tnnnlzzzzt",
+      "nnnczzzztlcnccpt3tllplpp33t",
+      "zzptpptttnzpzclcc3nnnlll3c3",
+      "tttt33lclpppnc3cclpzznzznnl",
+      "pppnllnntpcz3zltntccc3zl3zt",
+      "nzzlzzcccnnnlllcp3ttttpp3p3",
+      "ttttppzpl3nnncpzzl33cncclzl",
+      "ccclzzzzt3cnllltpt33npnnppt",
+      "ccclnnlnl3czzzpznl33ptppttt",
+      "llnlnnccclzpzzncz3pppttt3t3",
+      "ccct33tttnczzz3zplnnnlpplpl",
+      "pppznnlnlpc3z33znlccctttztl",
+      "zzpcppccl3zpznncnl33ttttlnl"
+    ],
+    "metrics": {
+      "nodes": 19280,
+      "placements": 531,
+      "solutions": 164,
+      "storedSolutions": 24,
+      "rawSolutions": 328,
+      "symmetries": 2,
+      "fillRatio": 0.6,
+      "surfaceArea": 66,
+      "truncated": false,
+      "score": 9.665
+    },
+    "difficulty": "easy"
+  },
+  {
     "id": "scorpion",
     "name": "Escorpión",
     "names": {
@@ -14377,6 +18949,364 @@
     "difficulty": "hard"
   },
   {
+    "id": "hb3f-39",
+    "name": "Graderías",
+    "names": {
+      "es": "Graderías",
+      "en": "Stands"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=39",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        4,
+        2,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            4,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            2
+          ],
+          [
+            4,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            4,
+            1,
+            0
+          ],
+          [
+            4,
+            2,
+            0
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "lcclclncnnltztntzztp3zpp3p3",
+      "zppnnnzpzpnc3z3lccc3ltttltl",
+      "tzztttzz333llnnnlcppnlccpcp",
+      "lllcccl3c3pt3pppttnnntzzzzn",
+      "3cc3cp3cppplzzzzlnlnltnnttt",
+      "3nn3nt3ctntcczctppzpzllllpz",
+      "czzzzlcccnlnnlnl3t33ptttppp",
+      "tttlzlptzzlppzpl3cnnn3cc3cn",
+      "tttnnnptppnpzccclzcz3lll3z3",
+      "lnnlnl33cnlc3ccpzzppptzzttt",
+      "pzzzztpptptn333tncnnllcclcl",
+      "tcc3c3tctz3tznznlznnplllppp",
+      "lppccclpcpzllznznnzn3ttt3t3",
+      "tzztttzzppp33lpl3ncnlcnnccl",
+      "tttltl3cccl33zclznznpznnppp",
+      "lllppplc3p3cc3ctnntntnzzzzt",
+      "ncc3c3ncnn3llpptlptptlzzzzt",
+      "lcclclpcpplp3nnnz3z3ntttztz",
+      "tzzzzpttpppt3nnnl3c3nlllccc",
+      "tttnnn3t33ncclclpcpplpzzzzl",
+      "ttt3t3ppzp3nnzpzlncnzlllccc",
+      "llllztnztztnznntpcpp3pcc3c3",
+      "lppnnnlpzpnllzzt3ctzt3cc3ct",
+      "znn3n3zztn3tztptpcppllcclcl"
+    ],
+    "metrics": {
+      "nodes": 8894,
+      "placements": 456,
+      "solutions": 222,
+      "storedSolutions": 24,
+      "rawSolutions": 222,
+      "symmetries": 1,
+      "fillRatio": 0.6,
+      "surfaceArea": 68,
+      "truncated": false,
+      "score": 11.347
+    },
+    "difficulty": "medium"
+  },
+  {
     "id": "heliport-corner-corner",
     "name": "Helipuerto esquinado",
     "names": {
@@ -14732,6 +19662,364 @@
       "score": 8.216
     },
     "difficulty": "easy"
+  },
+  {
+    "id": "hb3f-24",
+    "name": "Horca",
+    "names": {
+      "es": "Horca",
+      "en": "Gallows"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=24",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "nnncccpznzztczlllttltpp3p33",
+      "tzzzznttpcnpnnlll33l3tcccpp",
+      "333nnnzcznptpplllttltcczczp",
+      "ppctccpnpttczzlll33l3nnntzz",
+      "ccpcpp3cpnntzzlllttlt3n3nzz",
+      "tztptpzztnncpplll33l3zncncc",
+      "zcccnnzzncpnpplll33l3tztttp",
+      "nlnlllnnpzztczz33tt3tpppccc",
+      "czzzzncccpntnnlllttlt333ppp",
+      "nn3n33ncpcctzzlllttltpppczz",
+      "ppptzzcptttnzzlll33l3cccnnn",
+      "3p3pzz3cnpptzzlllttltccncnn",
+      "tncnccttnnpcpplll33l3tzzzzp",
+      "nnpnppnzpzztczlllttlt333ccc",
+      "zpcpcczztppcnnlll33l3tztntn",
+      "ppzpznzczpntnnlllttltcc3c33",
+      "tpppzzttpnnczzlll33l3tncncc",
+      "nnncccppnzztczz33tt3tplplll",
+      "cncczzpncnntzzlllttltpp3p33",
+      "tpcpccttnppczzlll33l3tnnnzz",
+      "333czzpcncctzzlllttltppnpnn",
+      "cc3c33zcznptpplllttltnnznzp",
+      "tztttnczpznpnnlll33l3ccczpp",
+      "tztttnzzppncnnlll33l3zpcpcc"
+    ],
+    "metrics": {
+      "nodes": 888,
+      "placements": 450,
+      "solutions": 40,
+      "storedSolutions": 24,
+      "rawSolutions": 40,
+      "symmetries": 1,
+      "fillRatio": 0.3,
+      "surfaceArea": 74,
+      "truncated": false,
+      "score": 13.272
+    },
+    "difficulty": "hard"
   },
   {
     "id": "church",
@@ -15436,7 +20724,7 @@
       "truncated": false,
       "score": 13.184
     },
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "id": "shell-game",
@@ -16839,6 +22127,364 @@
       "score": 13.887
     },
     "difficulty": "hard"
+  },
+  {
+    "id": "hb3f-13",
+    "name": "Monumento",
+    "names": {
+      "es": "Monumento",
+      "en": "Monument"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=13",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "plllppnncccpln3n3ctzt3tzztz",
+      "nlllnltztttnnpz3z3pppz3cccc",
+      "clllcctptptzlcnpptzznnn3z33",
+      "tllltltzzzzpptpcccnnnpc33n3",
+      "3lll3lppcccnn3pzpctnznzttzt",
+      "tlllnnpp333tltnpnptzzzzcccc",
+      "zlllzztzcccnlnnttcpppnt3p33",
+      "zlllplnn3n3zzppnp3tzcccttct",
+      "plllpptzzzzplnntnt33n3tcccc",
+      "plllnlnn333pptptntcczctzczz",
+      "nlllnncczczpltnzczpptpt33t3",
+      "nlll333zzzznlnnccctpppcttpt",
+      "3lllpptpttt3l3nzpznnznzcccc",
+      "3lll33tntttplppnnnpzccczzcz",
+      "tlllplppcccttpznnctznzn3z33",
+      "clllzlzz3z3cccppp3tnnnptntt",
+      "nlllpptp333nlnntptczcctzzcz",
+      "nlllnlcc3c3nnpppc3tztptzztz",
+      "tllltttzzzznlnp3p3nnpp3cccc",
+      "tlllnlnzcccttnnzzctpppz33p3",
+      "tlllzlzz3z3ttppnn3tpnpncccc",
+      "tllltttzcccplppzzcpnnnz3n33",
+      "tllltttnccczlnnpnczzppp3z33",
+      "3lllpppzzzz3l3pccctnnnctntt"
+    ],
+    "metrics": {
+      "nodes": 1774,
+      "placements": 422,
+      "solutions": 152,
+      "storedSolutions": 24,
+      "rawSolutions": 152,
+      "symmetries": 1,
+      "fillRatio": 0.27,
+      "surfaceArea": 74,
+      "truncated": false,
+      "score": 12.756
+    },
+    "difficulty": "medium"
   },
   {
     "id": "duck-monument",
@@ -18961,6 +24607,364 @@
     "difficulty": "medium"
   },
   {
+    "id": "hb3f-31",
+    "name": "Muro deslizante 2",
+    "names": {
+      "es": "Muro deslizante 2",
+      "en": "Sliding wall 2"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=31",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        2
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            4,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            4,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "cppcnpccpnntznllllz3tz3tz3t",
+      "p33ppzpt3llllzztttnccnzcnnc",
+      "nncnzcncctzl3zp33ptzltpptll",
+      "lllzztlzzcctpctppt3cnpnn33n",
+      "ttt33n3tnlppcczcnnlpzcpzllz",
+      "zllzncznlppczccnnlpt3p33ttt",
+      "c33cppcc3tttnpznpzltznnzlll",
+      "zppz3pztpc3nz3ntttcclcnnlll",
+      "t33tnntn3pzzpcctnczzlppclll",
+      "ppzcpzlpzcnncczlll3tn33nttt",
+      "zlltppzzltnptnptzl3ccnnc33c",
+      "z33ppczz3tllpccpzctlntnntln",
+      "tttnnzntzplzplznll3ccppc33c",
+      "pltpptpltnnczcclltzn3zncz33",
+      "nnznpznpzt3ct3ztpplcct3clll",
+      "z33zntzn3lltzctnntlcpccplpp",
+      "lllnnclccnptnzzzzc3ptppt33t",
+      "c33cnncc3llpzlnzlnztpzppttt",
+      "nncnpcnccllllpzppz3tz33zttt",
+      "zlnznnzlntcczcpllptc3tppt33",
+      "tlltpptlpcznccntlp3zzcnn33z",
+      "cppczpccpt33lzzllltn3tnztnn",
+      "cppczpccpnzt3zt33tnzlnntlll",
+      "cllc33ccltttzn3nnlztpznpzpp"
+    ],
+    "metrics": {
+      "nodes": 21342,
+      "placements": 506,
+      "solutions": 244,
+      "storedSolutions": 24,
+      "rawSolutions": 488,
+      "symmetries": 2,
+      "fillRatio": 0.6,
+      "surfaceArea": 66,
+      "truncated": false,
+      "score": 9.466
+    },
+    "difficulty": "easy"
+  },
+  {
     "id": "3s-2s-wall",
     "name": "Muro escalonado",
     "names": {
@@ -20367,6 +26371,364 @@
     "difficulty": "easy"
   },
   {
+    "id": "hb3f-48",
+    "name": "Oso",
+    "names": {
+      "es": "Oso",
+      "en": "Bear"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=48",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        2,
+        0,
+        4
+      ],
+      [
+        2,
+        0,
+        5
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        2,
+        1,
+        4
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            0,
+            4
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            2,
+            0,
+            4
+          ],
+          [
+            2,
+            0,
+            5
+          ],
+          [
+            2,
+            1,
+            4
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            3
+          ],
+          [
+            2,
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "tzzpcczzpcttppcn3tlllnn33ln",
+      "clllppcclpn3tttpcn33tzznnzz",
+      "lpzz33lpzzppnnc3ltttnccltnc",
+      "33nnplt3nptcnppltcczzlltczz",
+      "ltttzz33zzlctppn3lccpnnlcpn",
+      "ctzzllcczzttpnnlc3tppnl33pn",
+      "tttpccltpcnnppc3llnzz33lnzz",
+      "tlllpp33lpttnncp3tzzncczznc",
+      "lccnpplcnplctnnp3ltttzz33zz",
+      "pt33nlppnnptt3nlcctzzllcczz",
+      "p33tzzppzzp3tttncclllnnccln",
+      "3tlnpp33npttlnnpcctllzzcczz",
+      "nn33ppln3pnctttpllcctzzlczz",
+      "ccllzztczztclppnt33lpnnt3pn",
+      "lcctzzlczzpctttnlpp33nnlp3n",
+      "ct33plcc3pnttpplcntzzllnnzz",
+      "ctzzllcczzntt3plcnt33plnnpp",
+      "ptzzllppzzpttnnlcct33nlcc3n",
+      "cclnpptcnptclnnpt33llzzt3zz",
+      "33zzllt3zztcpnnltccppnltcpn",
+      "3tllzz33zzttlppncctlpnnccpn",
+      "ctnnplccnpttnpplc3tzzll33zz",
+      "ccnnpltcnptcnpplt33zzllt3zz",
+      "3tnnpl33npttnpplcctzzllcczz"
+    ],
+    "metrics": {
+      "nodes": 795,
+      "placements": 288,
+      "solutions": 32,
+      "storedSolutions": 24,
+      "rawSolutions": 32,
+      "symmetries": 1,
+      "fillRatio": 0.75,
+      "surfaceArea": 78,
+      "truncated": false,
+      "score": 11.96
+    },
+    "difficulty": "medium"
+  },
+  {
     "id": "duck",
     "name": "Pato",
     "names": {
@@ -21079,6 +27441,364 @@
       "score": 13.47
     },
     "difficulty": "hard"
+  },
+  {
+    "id": "hb3f-20",
+    "name": "Perro 2",
+    "names": {
+      "es": "Perro 2",
+      "en": "Dog 2"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=20",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        1,
+        3
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        2,
+        2
+      ],
+      [
+        4,
+        1,
+        3
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            3,
+            1,
+            3
+          ],
+          [
+            3,
+            2,
+            2
+          ],
+          [
+            4,
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "ccczzc333zzllnlnlttttppnnpp",
+      "zznnnzzncccp3p3tcpp3llltttl",
+      "cccllctttltzzp3l3zznpnnpp3n",
+      "nncccntntct3l3tzzlll3ppzzpp",
+      "pppzzccpczztctttl33n3nnllln",
+      "cccppclplpl33nztlnn3nzztttz",
+      "zzccczzppcl3lplpl33ntnntttn",
+      "nncccnlnlcltlpz33tttpzzpp3z",
+      "zzccczznncntlnlllttt3pp33pp",
+      "ccczzcnnnzztnpp3ptttlll33pl",
+      "pppzzccpczztcn3n3tttlllnn3l",
+      "llccclt33c3ltntzznntnppzzpp",
+      "zznnnzznccctltttclll3pp33pp",
+      "cccppctptptzz3t3lzzn3nnllln",
+      "ccczzc333zzplplllppntnntttn",
+      "cccppclplplzlzztz33n3nntttn",
+      "cccppcnplplnnnz3lttttzz33lz",
+      "nncccnlnlcp3lpzpp33ltzztttz",
+      "nncccnlnlclzlzz3zttttpp33pp",
+      "zzccczzppcp3nnntp33nllltttl",
+      "llcccl3nncnl3n3zzttttppzzpp",
+      "llcccltttctlnnnzz33n3ppzzpp",
+      "cccllcpppltzzptltzzn3nn33tn",
+      "cccppctplplttnznl33t3zznnlz"
+    ],
+    "metrics": {
+      "nodes": 1070,
+      "placements": 447,
+      "solutions": 50,
+      "storedSolutions": 24,
+      "rawSolutions": 50,
+      "symmetries": 1,
+      "fillRatio": 0.45,
+      "surfaceArea": 74,
+      "truncated": false,
+      "score": 12.724
+    },
+    "difficulty": "medium"
   },
   {
     "id": "003-dog",
@@ -24202,6 +30922,364 @@
     "difficulty": "medium"
   },
   {
+    "id": "hb3f-26",
+    "name": "Pozo",
+    "names": {
+      "es": "Pozo",
+      "en": "Well"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=26",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "pplptlttt3plcznzzz33lcnnccn",
+      "llznncncclzznpc333lztpttppt",
+      "z33zz3lznppclnnlnlpccptcttt",
+      "cctcttzztcnplzz333nnpnpplll",
+      "nccnpcpplnncpzlzzzttt3tl33l",
+      "tttcppccpltnczpzzzlnnln3l33",
+      "pnnppntllpncttl333zcczzctzl",
+      "zztlzzlllcttnpp333cctcnpnnp",
+      "tzzttctcczzplnclnl33p3pplnn",
+      "nnpcnpcctnppctt333llllzzzzt",
+      "ttt3tl33lppcnzlzzzpccpncnnl",
+      "llplnplnncpp3znzzzcctctt33t",
+      "33n3nnlppzznlpclpltzzttctcc",
+      "nccntctttnnclpplplz33zz3lzp",
+      "tzlnzznnzttlpnc333tllppcpcc",
+      "llzlzzlztpnnctt333ppncpncct",
+      "p33ppclccpn3lzczzznntnttllt",
+      "lnnltntttlnc3zpzzzlcc3pc3pp",
+      "cczcpnppnczzpnn333tzlttltll",
+      "33ncnnccl3pnczlzzztppttptll",
+      "lcclnclnnlpczzn333tppttptzz",
+      "tnnttntllpn3czlzzzpp3cp3ccl",
+      "nn3ln3lllnt3pzczzztttppcpcc",
+      "tttnncnccptlnzczzzppl3pl33l"
+    ],
+    "metrics": {
+      "nodes": 4587,
+      "placements": 338,
+      "solutions": 294,
+      "storedSolutions": 24,
+      "rawSolutions": 294,
+      "symmetries": 1,
+      "fillRatio": 0.6,
+      "surfaceArea": 74,
+      "truncated": false,
+      "score": 11.354
+    },
+    "difficulty": "medium"
+  },
+  {
     "id": "well-5",
     "name": "Pozo escalonado",
     "names": {
@@ -24916,6 +31994,344 @@
     "difficulty": "easy"
   },
   {
+    "id": "hb3f-15",
+    "name": "Rascacielos 1",
+    "names": {
+      "es": "Rascacielos 1",
+      "en": "Skyscraper 1"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=15",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        1,
+        0,
+        6
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            0,
+            6
+          ],
+          [
+            1,
+            1,
+            4
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            3
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "tcc33nnczznttc3lllppzzlntpp",
+      "tcc33ttczztppc3lllnnzzlnppn",
+      "ncc33nnczztppc3llltnzzltppt",
+      "pcc33nnczznppc3llltpzzlnttt"
+    ],
+    "metrics": {
+      "nodes": 563,
+      "placements": 404,
+      "solutions": 4,
+      "storedSolutions": 4,
+      "rawSolutions": 4,
+      "symmetries": 1,
+      "fillRatio": 0.429,
+      "surfaceArea": 70,
+      "truncated": false,
+      "score": 13.535
+    },
+    "difficulty": "hard"
+  },
+  {
     "id": "tugboat",
     "name": "Remolcador",
     "names": {
@@ -25611,7 +33027,349 @@
       "truncated": false,
       "score": 11.174
     },
-    "difficulty": "medium"
+    "difficulty": "easy"
+  },
+  {
+    "id": "hb3f-25",
+    "name": "Robot",
+    "names": {
+      "es": "Robot",
+      "en": "Robot"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=25",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        2,
+        0,
+        4
+      ],
+      [
+        2,
+        0,
+        5
+      ],
+      [
+        2,
+        0,
+        6
+      ],
+      [
+        2,
+        0,
+        7
+      ],
+      [
+        2,
+        1,
+        7
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        3
+      ],
+      [
+        3,
+        0,
+        4
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        3,
+        0,
+        7
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        5
+      ],
+      [
+        4,
+        1,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            2,
+            0,
+            6
+          ],
+          [
+            2,
+            0,
+            7
+          ],
+          [
+            2,
+            1,
+            7
+          ],
+          [
+            3,
+            0,
+            7
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            2,
+            0,
+            4
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            0,
+            5
+          ],
+          [
+            3,
+            0,
+            4
+          ],
+          [
+            3,
+            0,
+            5
+          ],
+          [
+            4,
+            0,
+            5
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            1,
+            0,
+            3
+          ],
+          [
+            2,
+            0,
+            3
+          ],
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            3,
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "nznnn3lzz33lztcccppllttcptp",
+      "nznnnllzz33lztcccpp3lttcptp",
+      "ntnnn3ltt33lztcccppllzzcpzp",
+      "ntnnnlltt33lztcccpp3lzzcpzp",
+      "ntnnnzztt33zztcccpp3lllcplp",
+      "nlnnntttlzztllcccppzz33cp3p",
+      "nlnnn3lll33zztcccppzzttcptp",
+      "n3nnnzz33zztllcccpptttlcplp"
+    ],
+    "metrics": {
+      "nodes": 115,
+      "placements": 161,
+      "solutions": 8,
+      "storedSolutions": 8,
+      "rawSolutions": 8,
+      "symmetries": 1,
+      "fillRatio": 0.338,
+      "surfaceArea": 94,
+      "truncated": false,
+      "score": 14.225
+    },
+    "difficulty": "hard"
   },
   {
     "id": "sacsayhuaman",
@@ -26644,7 +34402,7 @@
       "truncated": false,
       "score": 11.171
     },
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "funky-chair",
@@ -27000,6 +34758,364 @@
       "surfaceArea": 68,
       "truncated": false,
       "score": 10.753
+    },
+    "difficulty": "easy"
+  },
+  {
+    "id": "hb3f-18",
+    "name": "Sofá",
+    "names": {
+      "es": "Sofá",
+      "en": "Sofa"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=18",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        4,
+        2,
+        0
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            3,
+            0,
+            2
+          ],
+          [
+            4,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            2
+          ],
+          [
+            4,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            4,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "zcc3c3zclz3lllztppnttpnnpnt",
+      "nppnpznnpzzc33zlcc3cltttltl",
+      "cpplplccpcltttzl3tnzz3nn3nz",
+      "cllnnncclcntzlttpzzt3ppz3p3",
+      "ppznnnpzzpnczl33cclc3tllttt",
+      "nppnptnnpttlllztzclz3zcc3c3",
+      "tpptptzzptllzzllccnc3cnn3n3",
+      "cpp3p3ccpc3tzzttzzntllnnlnl",
+      "tcclcltc3tlt33zlppnzzpnnpnz",
+      "3pp3pz3tpzztttzlccnclcnnlnl",
+      "lpplplccpclczz33zznt3tnntnt",
+      "nppnpznnpzzl33ztlc3ttlcclct",
+      "lcclcllc3zzz33ztppnttpnnpnt",
+      "lpplplztpzltttzzccnc3cnn3n3",
+      "3cc3ct3clttlllztppnzzpnnpnz",
+      "tpptptzzpt3czz33ccncllnnlnl",
+      "nppnptnnpttz33ztlc3zzlcclcl",
+      "cpp3p3ccpc3tttzlztnzlznnlnl",
+      "lcclctlc3ttl33ztppnzzpnnpnz",
+      "nppnpznnpzzlllzt3cltt3cc3ct",
+      "nppnpznnpzzt33zltc3tltcclcl",
+      "cpplplccpcltttzlnt3zzn33nnz",
+      "lpplplzzptltzzttccnc3cnn3n3",
+      "cpp3p3ccpc3lzzllzzntltnntnt"
+    ],
+    "metrics": {
+      "nodes": 2603,
+      "placements": 325,
+      "solutions": 32,
+      "storedSolutions": 24,
+      "rawSolutions": 64,
+      "symmetries": 2,
+      "fillRatio": 0.6,
+      "surfaceArea": 74,
+      "truncated": false,
+      "score": 10.479
     },
     "difficulty": "easy"
   },
@@ -30174,6 +38290,364 @@
     "difficulty": "easy"
   },
   {
+    "id": "hb3f-45",
+    "name": "Tres cuadrados",
+    "names": {
+      "es": "Tres cuadrados",
+      "en": "Three squares"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=45",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "zzctzzp3p3lcctct3pplntnllnn",
+      "lllzpp3p3nztlzpnn3nztctctcc",
+      "tnnllllc33tzntncc3ctzpzpppz",
+      "llltttctcclnnznzzczpnppp333",
+      "ltclttntn3zcclcnn33zzlppzpp",
+      "tppttptccclzzlp333czzlnnnln",
+      "lpzlzznznnlpptptttnlc33cc3c",
+      "cc3czzzzppct3l3lplpntltntnn",
+      "pp3pllzlnltp3z3znnnttzctccc",
+      "zzclcclplltzzncnpppttnnt333",
+      "ztczcc33n3lttzcznnnltpplplp",
+      "tllzlnzlpptnntnzpzptc33cc3c",
+      "zz3tzztttcnn3l3lcccpnlnpplp",
+      "llltpptptc33lzptccc3nzznnnz",
+      "cc3ct3ttntcllz3znnnzlzpplpp",
+      "tttzppzznzltplplnnnlccc333c",
+      "llltppnnn3lzptpt3n3cztzcccz",
+      "lpptzpczccllltptzczn3t3n3nn",
+      "ltcltt3tpplcczc3p3plnzznnnz",
+      "ltclcclppplttzczzpz3t3nnn3n",
+      "llllznzzzctnntntccc33tpp3pp",
+      "tnztnnt3c3lzztnc3cclzpplplp",
+      "ll3l33lppptnnznzzpztntctccc",
+      "zppztpttntlllzpznnnl3c3c3cc"
+    ],
+    "metrics": {
+      "nodes": 9241,
+      "placements": 360,
+      "solutions": 214,
+      "storedSolutions": 24,
+      "rawSolutions": 214,
+      "symmetries": 1,
+      "fillRatio": 0.563,
+      "surfaceArea": 70,
+      "truncated": false,
+      "score": 11.439
+    },
+    "difficulty": "medium"
+  },
+  {
     "id": "big-3-w-pips",
     "name": "Tres gigante",
     "names": {
@@ -30886,6 +39360,712 @@
       "score": 10.666
     },
     "difficulty": "easy"
+  },
+  {
+    "id": "hb3f-43",
+    "name": "Tumba 1",
+    "names": {
+      "es": "Tumba 1",
+      "en": "Tomb 1"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=43",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        4
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            4,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            5
+          ],
+          [
+            2,
+            0,
+            4
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "pltp333clllttppnzzzzcctcnnn",
+      "3lt3nnnpllltt3nczzzzpptcpcc",
+      "3lt33nnclllttnpnzzzzcctcppp",
+      "cctcpppclllttnnpzzzznltn333",
+      "nntcnccnllltt3pczzzz3lt3ppp",
+      "cctcnnnclllttpnpzzzz3lt33pp",
+      "cctcpppclllttnlpzzzz33tn3nn",
+      "cctc333clllttplnzzzzpptpnnn",
+      "nntnpppclllttnlpzzzzcctc333",
+      "nntn333plllttnlczzzzpptcpcc",
+      "nntcnccnlllttplczzzzpptp333",
+      "nntpnppnlllttplczzzz33tc3cc",
+      "33tc3ccplllttnlczzzzpptnpnn",
+      "33tp3ppclllttplnzzzzcctcnnn"
+    ],
+    "metrics": {
+      "nodes": 252,
+      "placements": 405,
+      "solutions": 14,
+      "storedSolutions": 14,
+      "rawSolutions": 14,
+      "symmetries": 1,
+      "fillRatio": 0.3,
+      "surfaceArea": 76,
+      "truncated": false,
+      "score": 13.747
+    },
+    "difficulty": "hard"
+  },
+  {
+    "id": "hb3f-44",
+    "name": "Tumba 2",
+    "names": {
+      "es": "Tumba 2",
+      "en": "Tomb 2"
+    },
+    "source": "hb3f:A1C-ues84fL.pdf#page=44",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            3,
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "ntnppttztnnzpzpclzlllccc333",
+      "ltlllttct3zczcc33pznzpppnnn",
+      "zt3nntt3tznzn3cppzcccplplll",
+      "ltl33ttltppp3lznpnczznncczc",
+      "ztlllttntzzlnnncz3p33cccppp",
+      "ctpllttptccclppnnzlz3znzn33",
+      "ltlnnttltlnpnppccpc33zczz3z",
+      "ztp33ttptzzc3ppczccnnllnlnl",
+      "ltlzzttltlczznnccncnp33p3pp",
+      "ntnllttctnnclccz3zlpp33zpzp",
+      "ltlllttztnnz3z3pnznc3ppcpcc",
+      "ctlppttltcccplp33nzlz3znznn",
+      "ptlllttztpplpzzcc3cnz3c3nnn",
+      "ptlllttltppcpccznzzcznnn333",
+      "ztpnnttptznznppllzlcl33c3cc",
+      "ltlllttntpppnnnzpzccc33z3zc",
+      "ctlllttltcccz33nzpzp3nznnpp",
+      "ztlllttltzz333cpzncccppnpnn",
+      "ltl33ttltlzn3nnzzpcpnzcccpp",
+      "ltlnnttctlncncclzzzzp33p3pp",
+      "ltlzzttltlpzz33cpppn3cccnnn",
+      "ltlllttpt33pppzc3nnzzcccnzn",
+      "3t3ppttzt3czpzpcczcnnllnlnl",
+      "ztlppttltzzlpnpczlnnnccc333"
+    ],
+    "metrics": {
+      "nodes": 2922,
+      "placements": 436,
+      "solutions": 144,
+      "storedSolutions": 24,
+      "rawSolutions": 144,
+      "symmetries": 1,
+      "fillRatio": 0.45,
+      "surfaceArea": 72,
+      "truncated": false,
+      "score": 12.158
+    },
+    "difficulty": "medium"
   },
   {
     "id": "tunnel",

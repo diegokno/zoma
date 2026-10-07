@@ -136,6 +136,7 @@ const orientationOverrides = new Map([
   ["3x3x3_wall_cpn.soma", ([x, y, z]) => [-x, y, -z]],
   ["4x4_center_tower.soma", ([x, y, z]) => [-x, y, -z]],
   ["4x4_corner_tower.soma", ([x, y, z]) => [-x, y, -z]],
+  ["5_seat_bench.soma", ([x, y, z]) => [-x, -y, z]],
   ["6x4_flat.soma", ([x, y, z]) => [-x, y, -z]],
   ["apartment_building.soma", ([x, y, z]) => [-x, y, -z]],
   ["big_3_w_pips.soma", ([x, y, z]) => [x, -y, -z]],
