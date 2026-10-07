@@ -419,7 +419,7 @@ function renderUpdateNotice() {
     .map((id) => challenges.find((challenge) => challenge.id === id))
     .filter(Boolean);
   updateNoticePreview.innerHTML = featuredChallenges
-    .map((challenge) => `<span>${challengeThumbnailSvg(challenge.target, "xMidYMax meet")}</span>`)
+    .map((challenge) => `<span>${challengeThumbnailSvg(challenge.target)}</span>`)
     .join("");
   updateNoticePreview.hidden = featuredChallenges.length === 0;
   updateNoticePrimary.textContent = isUpdate ? t("updateNow") : t("tryNewChallenge");
