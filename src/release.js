@@ -1,5 +1,5 @@
 const release = {
-  version: "2026.10.07-115.6",
+  version: "2026.10.07-115.7",
   challengeIds: [
     "hb3f-34", "hb3f-35", "hb3f-22", "hb3f-21", "hb3f-23", "hb3f-47", "hb3f-42",
     "hb3f-08", "hb3f-09", "hb3f-11", "hb3f-36", "hb3f-37", "hb3f-27", "hb3f-39",
