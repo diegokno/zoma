@@ -67,6 +67,7 @@ const PROGRESS_KEY = "soma:progress";
 const LANGUAGE_KEY = "soma:language";
 const RELEASE_SEEN_KEY = "soma:release-seen";
 const UPDATE_DEFERRED_KEY = "soma:update-deferred";
+const LIBRARY_SEEN_RELEASE_KEY = "soma:library-seen-release";
 const wasReturningUser = hasStoredAppState();
 const translations = {
   es: {
@@ -257,6 +258,7 @@ const libraryGrid = document.querySelector("#library-grid");
 const librarySearch = document.querySelector("#library-search");
 const libraryEmpty = document.querySelector("#library-empty");
 const libraryProgress = document.querySelector("#library-progress");
+const libraryUpdateBadge = document.querySelector("#library-update-badge");
 const clearProgressButton = document.querySelector("#clear-progress");
 const clearProgressDialog = document.querySelector("#clear-progress-dialog");
 const clearProgressCancel = document.querySelector("#clear-progress-cancel");
@@ -417,7 +419,7 @@ function renderUpdateNotice() {
     .map((id) => challenges.find((challenge) => challenge.id === id))
     .filter(Boolean);
   updateNoticePreview.innerHTML = featuredChallenges
-    .map((challenge) => `<span>${challengeThumbnailSvg(challenge.target)}</span>`)
+    .map((challenge) => `<span>${challengeThumbnailSvg(challenge.target, "xMidYMax meet")}</span>`)
     .join("");
   updateNoticePreview.hidden = featuredChallenges.length === 0;
   updateNoticePrimary.textContent = isUpdate ? t("updateNow") : t("tryNewChallenge");
@@ -458,6 +460,24 @@ function markReleaseSeen(version) {
   } catch {
     // Release notes can reappear when persistent storage is restricted.
   }
+}
+
+function updateLibraryBadge() {
+  if (!libraryUpdateBadge) return;
+  try {
+    libraryUpdateBadge.hidden = localStorage.getItem(LIBRARY_SEEN_RELEASE_KEY) === release.version;
+  } catch {
+    libraryUpdateBadge.hidden = false;
+  }
+}
+
+function markLibrarySeen() {
+  try {
+    localStorage.setItem(LIBRARY_SEEN_RELEASE_KEY, release.version);
+  } catch {
+    // The indicator can reappear when persistent storage is restricted.
+  }
+  updateLibraryBadge();
 }
 
 function deferUpdate(version) {
@@ -824,7 +844,7 @@ function pieceThumbnailSvg(pieceId) {
   return `<svg viewBox="${minX} ${minY} ${width} ${height}" aria-hidden="true">${polygons.join("")}</svg>`;
 }
 
-function challengeThumbnailSvg(cubes) {
+function challengeThumbnailSvg(cubes, preserveAspectRatio = "xMidYMid meet") {
   const occupied = new Set(cubes.map(([x, y, z]) => `${x},${y},${z}`));
   const sorted = [...cubes].sort((a, b) =>
     (a[0] - a[1] + a[2]) - (b[0] - b[1] + b[2]));
@@ -856,7 +876,7 @@ function challengeThumbnailSvg(cubes) {
   const minY = Math.min(...ys) - 10;
   const width = Math.max(...xs) - minX + 10;
   const height = Math.max(...ys) - minY + 10;
-  return `<svg viewBox="${minX} ${minY} ${width} ${height}" aria-hidden="true">${polygons.join("")}</svg>`;
+  return `<svg viewBox="${minX} ${minY} ${width} ${height}" preserveAspectRatio="${preserveAspectRatio}" aria-hidden="true">${polygons.join("")}</svg>`;
 }
 
 function escapeHtml(value) {
@@ -1509,8 +1529,10 @@ document.querySelectorAll(".support-icon").forEach((element) => { element.innerH
 document.querySelector(".confirm-dialog-icon").innerHTML = iconMarkup(Trash2);
 fullscreenCompleteButton.innerHTML = iconMarkup(Check);
 applyLanguage();
+updateLibraryBadge();
 
 document.querySelector("#menu-toggle").addEventListener("click", () => {
+  markLibrarySeen();
   librarySearch.value = "";
   resetClearConfirmation();
   renderLibrary();

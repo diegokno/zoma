@@ -90,6 +90,7 @@ a:focus-visible {
 }
 
 .brand {
+  position: relative;
   width: 42px;
   height: 42px;
   display: grid;
@@ -131,6 +132,19 @@ a:focus-visible {
   border: 0;
   background: var(--ink);
 }
+
+.library-update-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--bg);
+  border-radius: 50%;
+  background: oklch(0.62 0.2 28);
+}
+
+.library-update-badge[hidden] { display: none; }
 
 .wake-button {
   min-height: 42px;
@@ -1072,7 +1086,7 @@ h1 {
   background: var(--surface);
 }
 .update-notice-preview[hidden] { display: none; }
-.update-notice-preview span { min-width: 0; display: grid; place-items: center; overflow: hidden; }
+.update-notice-preview span { min-width: 0; display: grid; place-items: end center; overflow: hidden; }
 .update-notice-preview svg { width: 100%; height: 100%; overflow: visible; }
 .update-notice-actions { width: 100%; margin-top: 20px; display: grid; gap: 8px; }
 .update-notice-actions button {

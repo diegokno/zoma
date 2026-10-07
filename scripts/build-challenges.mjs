@@ -151,15 +151,11 @@ const orientationOverrides = new Map([
 // Positive turns match the four-view review tools.
 const presentationQuarterTurns = new Map([
   ["flat-castle", 3],
-  ["hb3f-24", 3],
   ["soma100", 1],
   ["sacsayhuaman", 2],
-  ["hb3f-18", 2],
   ["4x4-center-tower", 2],
   ["4x4-corner-tower", 1],
   ["double-tower-notch-cube", 1],
-  ["hb3f-45", 3],
-  ["hb3f-36", 2],
 ]);
 
 function permutations(values) {
