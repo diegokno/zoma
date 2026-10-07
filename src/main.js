@@ -3,10 +3,11 @@ import noSleepMedia from "nosleep.js/src/media.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.js";
 import {
-  Check, ChevronDown, ChevronLeft, ChevronRight, Coffee, Ellipsis, Flag, History, Languages, Maximize2, Minimize2, Pause, Play, RotateCcw, Search, Shuffle,
-  TimerReset, Trash2, Trophy, Undo2, X, createElement,
+  Check, ChevronDown, ChevronLeft, ChevronRight, Coffee, Ellipsis, Flag, History, Languages, Maximize2, Minimize2, Pause, Play, RefreshCw, RotateCcw, Search,
+  Shuffle, Sparkles, TimerReset, Trash2, Trophy, Undo2, X, createElement,
 } from "lucide";
 import challenges from "./data/challenges.json";
+import release from "./release.js";
 import "./styles.css";
 
 const isKofiTheme = document.body.classList.contains("kofi-theme");
@@ -64,6 +65,9 @@ const pieceShapes = {
 const LAST_CHALLENGE_KEY = "soma:last-challenge";
 const PROGRESS_KEY = "soma:progress";
 const LANGUAGE_KEY = "soma:language";
+const RELEASE_SEEN_KEY = "soma:release-seen";
+const UPDATE_DEFERRED_KEY = "soma:update-deferred";
+const wasReturningUser = hasStoredAppState();
 const translations = {
   es: {
     pageTitle: "Zoma",
@@ -141,6 +145,12 @@ const translations = {
     bestRecord: "Mejor tiempo",
     today: "Hoy",
     yesterday: "Ayer",
+    updateAvailable: "Actualización disponible",
+    updateDescription: "Hay una versión nueva de Zoma lista para instalar.",
+    updateNow: "Actualizar",
+    updateLater: "Más tarde",
+    updateDone: "Entendido",
+    closeUpdate: "Cerrar aviso",
   },
   en: {
     pageTitle: "Zoma",
@@ -218,6 +228,12 @@ const translations = {
     bestRecord: "Best time",
     today: "Today",
     yesterday: "Yesterday",
+    updateAvailable: "Update available",
+    updateDescription: "A new version of Zoma is ready to install.",
+    updateNow: "Update",
+    updateLater: "Later",
+    updateDone: "Got it",
+    closeUpdate: "Close notice",
   },
 };
 const sceneElement = document.querySelector("#scene");
@@ -262,6 +278,13 @@ const fullscreenTimerDisplay = document.querySelector("#fullscreen-timer-display
 const fullscreenTimerToggle = document.querySelector("#fullscreen-timer-toggle");
 const fullscreenCompleteButton = document.querySelector("#fullscreen-mark-complete");
 const modeButtons = [...document.querySelectorAll(".mode-button")];
+const updateNotice = document.querySelector("#update-notice");
+const updateNoticeIcon = document.querySelector("#update-notice-icon");
+const updateNoticeTitle = document.querySelector("#update-notice-title");
+const updateNoticeDescription = document.querySelector("#update-notice-description");
+const updateNoticePrimary = document.querySelector("#update-notice-primary");
+const updateNoticeSecondary = document.querySelector("#update-notice-secondary");
+const updateNoticeClose = document.querySelector("#update-notice-close");
 
 if (document.body.classList.contains("fixed-zoom")) {
   document.addEventListener("dblclick", (event) => event.preventDefault(), { passive: false });
@@ -291,6 +314,17 @@ let pseudoFullscreen = false;
 let languagePreference = loadLanguagePreference();
 let language = resolveLanguage(languagePreference);
 let recordsChallengeId = null;
+let availableRelease = null;
+let updateNoticeMode = null;
+
+function hasStoredAppState() {
+  try {
+    return [LAST_CHALLENGE_KEY, PROGRESS_KEY, LANGUAGE_KEY]
+      .some((keyName) => localStorage.getItem(keyName) !== null);
+  } catch {
+    return false;
+  }
+}
 
 const wakeVideo = document.createElement("video");
 wakeVideo.muted = true;
@@ -359,6 +393,104 @@ function iconMarkup(Icon) {
   const element = createElement(Icon);
   element.setAttribute("aria-hidden", "true");
   return element.outerHTML;
+}
+
+function releaseNotesFor(targetRelease) {
+  return targetRelease?.notes?.[language]
+    ?? targetRelease?.notes?.es
+    ?? { title: "Zoma", description: "" };
+}
+
+function renderUpdateNotice() {
+  if (!updateNoticeMode || !availableRelease) return;
+  const notes = releaseNotesFor(availableRelease);
+  const isUpdate = updateNoticeMode === "update";
+  updateNoticeIcon.innerHTML = iconMarkup(isUpdate ? RefreshCw : Sparkles);
+  updateNoticeTitle.textContent = isUpdate ? t("updateAvailable") : notes.title;
+  updateNoticeDescription.textContent = isUpdate
+    ? `${t("updateDescription")} ${notes.title}: ${notes.description}`
+    : notes.description;
+  updateNoticePrimary.textContent = isUpdate ? t("updateNow") : t("updateDone");
+  updateNoticeSecondary.textContent = t("updateLater");
+  updateNoticeSecondary.hidden = !isUpdate;
+  updateNoticeClose.setAttribute("aria-label", t("closeUpdate"));
+  updateNoticeClose.innerHTML = iconMarkup(X);
+}
+
+function showUpdateNotice(mode, targetRelease) {
+  updateNoticeMode = mode;
+  availableRelease = targetRelease;
+  renderUpdateNotice();
+  updateNotice.hidden = false;
+}
+
+function hideUpdateNotice() {
+  updateNotice.hidden = true;
+  updateNoticeMode = null;
+}
+
+function markReleaseSeen(version) {
+  try {
+    localStorage.setItem(RELEASE_SEEN_KEY, version);
+  } catch {
+    // Release notes can reappear when persistent storage is restricted.
+  }
+}
+
+function deferUpdate(version) {
+  try {
+    sessionStorage.setItem(UPDATE_DEFERRED_KEY, version);
+  } catch {
+    // The update remains available if session storage is restricted.
+  }
+  hideUpdateNotice();
+}
+
+function installAvailableUpdate() {
+  if (!availableRelease) return;
+  const url = new URL(window.location.href);
+  url.searchParams.set("update", availableRelease.version);
+  window.location.replace(url);
+}
+
+async function fetchLatestRelease() {
+  const response = await fetch(`/release.json?time=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) throw new Error(`Release check failed with ${response.status}`);
+  return response.json();
+}
+
+async function checkForAppUpdate() {
+  if (!navigator.onLine) return;
+  try {
+    const latest = await fetchLatestRelease();
+    if (latest.version !== release.version) {
+      let deferred = null;
+      try { deferred = sessionStorage.getItem(UPDATE_DEFERRED_KEY); } catch { /* No session storage. */ }
+      if (deferred !== latest.version) showUpdateNotice("update", latest);
+      return;
+    }
+
+    let seenVersion = null;
+    try { seenVersion = localStorage.getItem(RELEASE_SEEN_KEY); } catch { /* No persistent storage. */ }
+    if (!seenVersion && !wasReturningUser) {
+      markReleaseSeen(release.version);
+      return;
+    }
+    if (seenVersion !== release.version) showUpdateNotice("release", release);
+  } catch {
+    // Update checks are best-effort; the current app stays fully usable offline.
+  }
+}
+
+async function initializeAppUpdates() {
+  if ("serviceWorker" in navigator && window.isSecureContext) {
+    try {
+      await navigator.serviceWorker.register("/sw.js", { scope: "/", updateViaCache: "none" });
+    } catch {
+      // Version checks still work when service workers are unavailable.
+    }
+  }
+  await checkForAppUpdate();
 }
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -1306,6 +1438,7 @@ function applyLanguage() {
   updateInterface();
   if (libraryDialog.open) renderLibrary();
   if (recordsDialog.open) renderRecordsDialog();
+  if (!updateNotice.hidden) renderUpdateNotice();
 }
 
 document.querySelector("#reset-view").innerHTML = iconMarkup(RotateCcw);
@@ -1318,6 +1451,26 @@ recordsClose.innerHTML = iconMarkup(X);
 document.querySelector(".library-search-icon").innerHTML = iconMarkup(Search);
 document.querySelector("#previous-solution").innerHTML = iconMarkup(ChevronLeft);
 document.querySelector("#next-solution").innerHTML = iconMarkup(ChevronRight);
+
+updateNoticePrimary.addEventListener("click", () => {
+  if (updateNoticeMode === "update") {
+    installAvailableUpdate();
+    return;
+  }
+  if (availableRelease) markReleaseSeen(availableRelease.version);
+  hideUpdateNotice();
+});
+updateNoticeSecondary.addEventListener("click", () => {
+  if (availableRelease) deferUpdate(availableRelease.version);
+});
+updateNoticeClose.addEventListener("click", () => {
+  if (updateNoticeMode === "update" && availableRelease) {
+    deferUpdate(availableRelease.version);
+    return;
+  }
+  if (availableRelease) markReleaseSeen(availableRelease.version);
+  hideUpdateNotice();
+});
 document.querySelector(".language-chevron").innerHTML = iconMarkup(ChevronDown);
 document.querySelector(".language-icon").innerHTML = iconMarkup(Languages);
 document.querySelectorAll(".language-check").forEach((element) => { element.innerHTML = iconMarkup(Check); });
@@ -1454,8 +1607,11 @@ wakeButton.addEventListener("click", () => {
 });
 
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible" && wakeRequested && !wakeLock) requestWakeLock();
+  if (document.visibilityState !== "visible") return;
+  if (wakeRequested && !wakeLock) requestWakeLock();
+  void checkForAppUpdate();
 });
+window.addEventListener("online", () => void checkForAppUpdate());
 
 window.addEventListener("keydown", (event) => {
   if (libraryDialog.open || (event.target instanceof Element && event.target.matches("input, select"))) return;
@@ -1510,3 +1666,4 @@ function animate() {
 resetTimer();
 renderChallenge();
 animate();
+void initializeAppUpdates();
