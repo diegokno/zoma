@@ -147,6 +147,21 @@ const orientationOverrides = new Map([
   ["walls_wells_2_001.soma", ([x, y, z]) => [-x, y, -z]],
 ]);
 
+// Final viewing direction shared by the 3D model and generated thumbnails.
+// Positive turns match the four-view review tools.
+const presentationQuarterTurns = new Map([
+  ["flat-castle", 3],
+  ["hb3f-24", 3],
+  ["soma100", 1],
+  ["sacsayhuaman", 2],
+  ["hb3f-18", 2],
+  ["4x4-center-tower", 2],
+  ["4x4-corner-tower", 1],
+  ["double-tower-notch-cube", 1],
+  ["hb3f-45", 3],
+  ["hb3f-36", 2],
+]);
+
 function permutations(values) {
   return [
     [values[0], values[1], values[2]], [values[0], values[2], values[1]],
@@ -184,6 +199,14 @@ function normalized(cubes) {
   return cubes
     .map((cube) => cube.map((value, axis) => value - mins[axis]))
     .sort((a, b) => key(a).localeCompare(key(b)));
+}
+
+function applyPresentationTurns(cubes, turns = 0) {
+  let result = cubes;
+  for (let turn = 0; turn < turns; turn += 1) {
+    result = result.map(([x, y, z]) => [-y, x, z]);
+  }
+  return normalized(result);
 }
 
 function canonicalSignature(cubes) {
@@ -485,7 +508,9 @@ for (const filename of sourceFiles) {
   try {
     const parsedTarget = parseFigure(await readFile(path.join(sourceDirectory, filename), "utf8"));
     const orient = orientationOverrides.get(filename);
-    const target = orient ? normalized(parsedTarget.map(orient)) : parsedTarget;
+    const id = slugFromFilename(filename);
+    const orientedTarget = orient ? normalized(parsedTarget.map(orient)) : parsedTarget;
+    const target = applyPresentationTurns(orientedTarget, presentationQuarterTurns.get(id));
     if (!isFaceConnected(target)) throw new Error("disconnected shape");
     const signature = canonicalSignature(target);
     if (seenShapes.has(signature)) {
@@ -499,7 +524,7 @@ for (const filename of sourceFiles) {
     };
     seenShapes.add(signature);
     challenges.push({
-      id: slugFromFilename(filename),
+      id,
       name: names.es,
       names,
       source: filename,
@@ -515,7 +540,7 @@ for (const filename of sourceFiles) {
 
 const curatedChallenges = JSON.parse(await readFile(curatedChallengesPath, "utf8"));
 for (const curated of curatedChallenges) {
-  const target = normalized(curated.target);
+  const target = applyPresentationTurns(curated.target, presentationQuarterTurns.get(curated.id));
   if (target.length !== 27) throw new Error(`${curated.id}: expected 27 cubes, found ${target.length}`);
   if (!isFaceConnected(target)) throw new Error(`${curated.id}: disconnected shape`);
   const signature = canonicalSignature(target);
