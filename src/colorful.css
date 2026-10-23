@@ -657,6 +657,10 @@
   .colorful-theme .wake-button { display: none; }
 }
 
+@media (min-width: 901px) and (any-pointer: coarse) {
+  .colorful-theme .wake-button { display: inline-flex; }
+}
+
 @media (max-width: 900px) {
   .colorful-theme .topbar {
     height: calc(56px + env(safe-area-inset-top));

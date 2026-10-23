@@ -1,7 +1,7 @@
 const release = {
-  version: "2026.10.23-116.0",
+  version: "2026.10.23-116.1",
   challengeIds: ["goose"],
-  featuredChallengeIds: ["goose", "creeper", "minecraft-pig", "intihuatana"],
+  featuredChallengeIds: ["goose"],
   notes: {
     es: {
       title: "Nueva forma en Zoma",

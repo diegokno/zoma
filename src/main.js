@@ -415,12 +415,19 @@ function renderUpdateNotice() {
   updateNoticeDescription.textContent = isUpdate
     ? `${t("updateDescription")} ${notes.title}: ${notes.description}`
     : notes.description;
-  const featuredChallenges = (availableRelease.featuredChallengeIds ?? [])
+  const releaseChallengeIds = new Set(availableRelease.challengeIds ?? []);
+  const requestedFeaturedIds = availableRelease.featuredChallengeIds?.length
+    ? availableRelease.featuredChallengeIds
+    : [...releaseChallengeIds];
+  const featuredChallenges = [...new Set(requestedFeaturedIds)]
+    .filter((id) => releaseChallengeIds.has(id))
+    .slice(0, 4)
     .map((id) => challenges.find((challenge) => challenge.id === id))
     .filter(Boolean);
   updateNoticePreview.innerHTML = featuredChallenges
     .map((challenge) => `<span>${challengeThumbnailSvg(challenge.target)}</span>`)
     .join("");
+  updateNoticePreview.style.setProperty("--preview-count", String(Math.max(1, featuredChallenges.length)));
   updateNoticePreview.hidden = featuredChallenges.length === 0;
   updateNoticePrimary.textContent = isUpdate ? t("updateNow") : t("tryNewChallenge");
   updateNoticeSecondary.textContent = isUpdate ? t("updateLater") : t("updateDone");
