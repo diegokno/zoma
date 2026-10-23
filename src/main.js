@@ -406,6 +406,31 @@ function releaseNotesFor(targetRelease) {
     ?? { title: "Zoma", description: "" };
 }
 
+function releaseNoticeSince(targetRelease, seenVersion) {
+  const history = targetRelease?.history;
+  if (!Array.isArray(history) || history.length === 0) return targetRelease;
+  const seenIndex = history.findIndex((entry) => entry.version === seenVersion);
+  const pending = seenIndex >= 0 ? history.slice(seenIndex + 1) : history;
+  if (pending.length <= 1) return targetRelease;
+
+  const challengeIds = [...new Set(pending.flatMap((entry) => entry.challengeIds ?? []))];
+  const featuredChallengeIds = [...new Set(pending.flatMap((entry) => entry.featuredChallengeIds ?? entry.challengeIds ?? []))];
+  const names = challengeIds
+    .map((id) => challenges.find((challenge) => challenge.id === id)?.names?.[language])
+    .filter(Boolean);
+  const list = new Intl.ListFormat(language === "en" ? "en" : "es", { style: "long", type: "conjunction" }).format(names);
+  const notes = language === "en"
+    ? { title: "New shapes in Zoma", description: `${list} are now available in the library.` }
+    : { title: "Nuevas formas en Zoma", description: `${list} ya están disponibles en la biblioteca.` };
+
+  return {
+    ...targetRelease,
+    challengeIds,
+    featuredChallengeIds,
+    notes: { [language]: notes },
+  };
+}
+
 function renderUpdateNotice() {
   if (!updateNoticeMode || !availableRelease) return;
   const notes = releaseNotesFor(availableRelease);
@@ -526,7 +551,7 @@ async function checkForAppUpdate() {
       markReleaseSeen(release.version);
       return;
     }
-    if (seenVersion !== release.version) showUpdateNotice("release", release);
+    if (seenVersion !== release.version) showUpdateNotice("release", releaseNoticeSince(release, seenVersion));
   } catch {
     // Update checks are best-effort; the current app stays fully usable offline.
   }

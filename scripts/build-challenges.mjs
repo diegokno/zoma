@@ -176,6 +176,10 @@ const presentationQuarterTurns = new Map([
   ["4x4-center-tower", 2],
   ["4x4-corner-tower", 1],
   ["double-tower-notch-cube", 1],
+  ["giraffe", 2],
+  ["gorilla", 3],
+  ["living-room", 3],
+  ["gorilla-ii", 3],
 ]);
 
 function permutations(values) {
