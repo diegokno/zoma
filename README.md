@@ -1,7 +1,7 @@
 # Zoma
 
 Zoma is a mobile-first companion for people who own a physical Soma cube. It
-contains 116 exact, connected and solver-verified challenges, interactive 3D
+contains 120 exact and solver-verified challenges, interactive 3D
 inspection, piece-by-piece solutions, a timer and local progress tracking.
 
 ## Run locally

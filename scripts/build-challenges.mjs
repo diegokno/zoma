@@ -555,25 +555,34 @@ for (const filename of sourceFiles) {
 }
 
 const curatedChallenges = JSON.parse(await readFile(curatedChallengesPath, "utf8"));
+const curatedFailures = [];
 for (const curated of curatedChallenges) {
-  const target = applyPresentationTurns(curated.target, presentationQuarterTurns.get(curated.id));
-  if (target.length !== 27) throw new Error(`${curated.id}: expected 27 cubes, found ${target.length}`);
-  if (!isFaceConnected(target)) throw new Error(`${curated.id}: disconnected shape`);
-  const signature = canonicalSignature(target);
-  if (seenShapes.has(signature)) throw new Error(`${curated.id}: duplicate geometry`);
-  const { solution, solutions, metrics } = solve(target);
-  seenShapes.add(signature);
-  challenges.push({
-    id: curated.id,
-    name: curated.names.es,
-    names: curated.names,
-    source: curated.source,
-    origin: "curated",
-    target,
-    solution,
-    solutions,
-    metrics,
-  });
+  try {
+    const target = applyPresentationTurns(curated.target, presentationQuarterTurns.get(curated.id));
+    if (target.length !== 27) throw new Error(`expected 27 cubes, found ${target.length}`);
+    if (!curated.allowDisconnected && !isFaceConnected(target)) throw new Error("disconnected shape");
+    const signature = canonicalSignature(target);
+    if (seenShapes.has(signature)) throw new Error("duplicate geometry");
+    const { solution, solutions, metrics } = solve(target);
+    seenShapes.add(signature);
+    challenges.push({
+      id: curated.id,
+      name: curated.names.es,
+      names: curated.names,
+      source: curated.source,
+      origin: "curated",
+      target,
+      solution,
+      solutions,
+      metrics,
+    });
+  } catch (error) {
+    curatedFailures.push(`${curated.id}: ${error.message}`);
+  }
+}
+
+if (curatedFailures.length) {
+  throw new Error(`Invalid curated challenges:\n${curatedFailures.join("\n")}`);
 }
 
 const rankedChallenges = [...challenges].sort((a, b) => a.metrics.score - b.metrics.score);
