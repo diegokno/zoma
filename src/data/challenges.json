@@ -18949,6 +18949,364 @@
     "difficulty": "hard"
   },
   {
+    "id": "goose",
+    "name": "Ganso",
+    "names": {
+      "es": "Ganso",
+      "en": "Goose"
+    },
+    "source": "sculptor:ganso.json",
+    "origin": "curated",
+    "target": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        4
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        4,
+        1,
+        5
+      ]
+    ],
+    "solution": [
+      {
+        "id": "c",
+        "cubes": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "p",
+        "cubes": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "n",
+        "cubes": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "z",
+        "cubes": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            1
+          ],
+          [
+            3,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "t",
+        "cubes": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            1
+          ],
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            3,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "id": "l",
+        "cubes": [
+          [
+            3,
+            1,
+            3
+          ],
+          [
+            3,
+            1,
+            4
+          ],
+          [
+            3,
+            1,
+            5
+          ],
+          [
+            4,
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "id": "3",
+        "cubes": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ]
+        ]
+      }
+    ],
+    "solutions": [
+      "cccnncpnnz3pppzz3t3ttlllztl",
+      "ztz33ttzz3ctnnnpcccpplllnpl",
+      "ppnnnpcpzncctczztltlll33tz3",
+      "ppcccpnpctnnnt3tzz3zzlll3tl",
+      "33zztz3zttpnppctpncnnlllccl",
+      "pppnnzpnnczztccctzt33lllt3l",
+      "ccc33ctpp3ttnnppntnzzlllzzl",
+      "cccnncznntzzppttzlplll33pt3",
+      "ppcccptpczttnnzzntnlll33zl3",
+      "ppnnnptpcn3tctcc3t3zzlllzzl",
+      "ppp33npnz3nntczztctccllltzl",
+      "ppcccp3pczn3n3zznntttlllztl",
+      "33nnnz3ppnzztcpptztccllltcl",
+      "cccnncznn3zzp3p3zttttlllppl",
+      "ppcccpzpcnzznn3nzttttlll33l",
+      "pppnncpnntccct3tzz3zzlll3tl",
+      "33cccn3nctnnppttzzpzzlllptl",
+      "cccnnctnnp3tptpp3t3zzlllzzl",
+      "ppnnnp3pzn33tczztctccllltzl",
+      "cccnnc3nnt33ppttzzpzzlllptl",
+      "ppcccptpc3ttnn33ntnzzlllzzl",
+      "cccnncznntzzppttz3p33lllptl",
+      "ppcccptpczttnnzzntn33lllz3l",
+      "ppnnnpcpzncctczzt3t33llltzl"
+    ],
+    "metrics": {
+      "nodes": 874,
+      "placements": 349,
+      "solutions": 32,
+      "storedSolutions": 24,
+      "rawSolutions": 32,
+      "symmetries": 1,
+      "fillRatio": 0.3,
+      "surfaceArea": 76,
+      "truncated": false,
+      "score": 13.32
+    },
+    "difficulty": "hard"
+  },
+  {
     "id": "hb3f-39",
     "name": "Graderías",
     "names": {
@@ -20366,7 +20724,7 @@
       "truncated": false,
       "score": 13.207
     },
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "id": "intihuatana",
@@ -27083,7 +27441,7 @@
       "truncated": false,
       "score": 11.201
     },
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "id": "dog",
